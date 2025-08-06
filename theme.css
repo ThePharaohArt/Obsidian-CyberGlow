@@ -8,11 +8,17 @@ collapsed: false
 settings:
    - 
       id: CG-workspace
-      title: Background Controls
+      title: 🆕 Background Controls
       type: heading
       level: 1
       description: Custom Background/Wallpaper Controls
       collapsed: true
+   - 
+      id: CG-settings-background
+      title: 🆕 Disable Settings Colored Background
+      description: Removes background color in settings
+      type: class-toggle
+      default: false
    - 
       id: CG-workspace-background
       title: Enable Workspace Backgound
@@ -178,7 +184,7 @@ settings:
         format: px	
    - 
       id: CG-Note
-      title: 🆕 Note Controls
+      title: Note Controls
       type: heading
       description: Custom Checkboxes, Line Width, Codeblocks Controls, Signature/Cite font, Base Font
       level: 1
@@ -190,6 +196,18 @@ settings:
       default: true
       type: class-toggle
    -
+        title: Disable Codeblocks Gutter
+        description: Remove line numbers and additional styling to code blocks
+        id: no-codeblock-line-numbers
+        type: class-toggle
+        default: false
+   -
+        title: Disable Bullets in Callout
+        description: Remove bullet list ticker when inside of callouts
+        id: CG-bulletcallout
+        type: class-toggle
+        default: false
+   -
 		id: CG-line-width
 		title: Readable line width
 		description: The maximum line width in rem (unit relative to Appearance -> Font Size)
@@ -200,12 +218,6 @@ settings:
 		step: 1
 		format: 'rem'
    -
-        title: Disable Codeblocks Gutter
-        description: Remove line numbers and additional styling to code blocks
-        id: no-codeblock-line-numbers
-        type: class-toggle
-        default: false
-   -
 		id: CG-cite-font
 		title: Cite/Signature Font (Used in blockquotes and quote callouts)
 		description: Get Font from Cyber Glow's Github page. Recommend using a cursive font style
@@ -213,7 +225,7 @@ settings:
 		default: 'Edwardian Script ITC'
    -
       id: CG-bullet-style
-      title: 🆕 Bullet Style
+      title: Bullet Style
       type: class-select
       allowEmpty: false
       default: CG-triangle
@@ -234,18 +246,18 @@ settings:
         label: □ Square Bullet
         value: CG-Square
    -
-        title: 🆕 Disable Bullets in Callout
-        description: Remove bullet list ticker when inside of callouts
-        id: CG-bulletcallout
-        type: class-toggle
-        default: false
-   -
 		id: headings
 		title: Heading Controls
 		type: heading
 		description: Header Dividing Line Controls
 		level: 1
 		collapsed: true
+   -
+        title: Disable Bullets in Callout
+        description: Remove bullet list ticker when inside of callouts
+        id: CG-bulletcallout
+        type: class-toggle
+        default: false
    -
       id: CG-hr
       title: Heading Dividing Line (---)
@@ -279,18 +291,18 @@ settings:
       default: url("app://local/")
       value: CG-Custom-sbt
    -
-		id: mini-header-hide
-		title: Show Header Indication
-		description: Enabling this will show the small header indicator next to headers, such as H1, H2, etc.
-		type: class-toggle
-		default: true
-   -
       id: CG-Color
-      title: Color Picker
+      title: 🆕 Color Picker
       type: heading
       description: Change Colors of certain elements
       level: 1
       collapsed: true
+   - 
+        title: 🆕 Window Highlight Accent
+        id: custom-windhighlight-accent
+        type: variable-color
+        format: hsl-values
+        default: 'hsl(198, 63%, 57%)'
    - 
         title: Selected Accent
         id: custom-selected-accent
@@ -308,12 +320,6 @@ settings:
         id: active-title
         type: variable-color
         format: hsl-values
-        default: 'hsl(198, 63%, 57%)'
-   - 
-        title: Blockquote color
-        id: block-color
-        type: variable-color
-        format: hsl
         default: 'hsl(198, 63%, 57%)'
    - 
         title: Hover Color
@@ -454,13 +460,6 @@ settings:
 		description:  Enter Header 6 Font size
 		type: variable-text
 		default: 1.25em		
-   - 
-      id: CG-other
-      title: ⚠️ In Progress Controls ⚠️
-      type: heading
-      description: Empty for Now
-      level: 1
-      collapsed: true
  
 */
 @font-face {
@@ -515,6 +514,9 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
    /*Custom Color for sidepanel selected file/option */
     --custom-selected-accent: var(--color-accent-hsl);
     --custom-acc-bg: hsla(var(--custom-selected-accent), 0.5);
+
+    --custom-windhighlight-accent: var(--color-accent-hsl);
+    --customewindowhighlightaccent: hsla(var(--custom-windhighlight-accent), 0.25);
 
    /*Custom Color for sidepanel selected file/option */
    --custom-boldText-glow: var(--color-accent-hsl);
@@ -845,7 +847,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     background-color: var(--hover-bg);
     box-shadow: inset 0em 0em 1em var(--hover-color);
     border-radius: var(--radius-s);
-    transition: box-shadow 0.3s, background-color 0.3s, animation 0.3s, color 0.3s !important;
+    transition: animation 0.3s, color 0.3s !important;
     animation: 0.2s smallhover forwards;
     color: var(--text-on-accent);
 }
@@ -853,7 +855,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     background-color: var(--hover-bg);
     box-shadow: inset 0em 0em 0.7em var(--hover-color);
     border-radius: var(--radius-s);
-    transition: box-shadow 0.3s, background-color 0.3s, animation 0.3s, color 0.3s !important;
+    transition: animation 0.3s, color 0.3s !important;
     color: var(--text-on-accent);
 }
 
@@ -1043,9 +1045,11 @@ button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, butt
 /*Adds padding and reduces size for Style Settings Ex/Import*/
 .style-settings-export, .style-settings-import {
     font-size: small;
-    padding: 3px;
+    padding: 5px;
 }
-
+.style-settings-export:hover, .style-settings-import:hover{
+    color:var(--text-on-accent);
+}
 .CG-disableAni .setting-item.setting-item-heading.style-settings-heading:hover, .CG-disableAni .tree-item-self.is-clickable:hover, .CG-disableAni .menu-item:hover, .CG-disableAni .vertical-tab-nav-item:hover, .CG-disableAni .community-item:hover{
     animation: none;
   }
@@ -1329,10 +1333,9 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
     background-color: var(--hover-bg2);
     box-shadow: inset 0em 0em 1em var(--hover-color);
     border-radius: var(--radius-s);
-    transition: box-shadow 0.2s, background-color 0.2s, animation 0.2s, color 0.2s !important;
+    transition:  animation 0.2s, color 0.2s;
     border-radius: 5px;
     color: var(--text-on-accent);
-    transition: color 0.3s;
 }
 
 /*Fixes Highlight Issue for Icons in Menu*/
@@ -1475,18 +1478,11 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
 
 /*Active Tab Growth Ani*/
 .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active:not(.mod-stacked) {
-    flex-grow: 1.25;
     max-width: var(--tab-width);
-    transition: max-width 100ms ease-in-out;
-    color:var(--activetab-highlight);
-}
-.mod-left-split .workspace-tab-header.has-active-menu, .mod-right-split .workspace-tab-header.has-active-menu, .mod-left-split .workspace-tab-header.is-active, .mod-right-split .workspace-tab-header.is-active{
-    background-color: var(--activetab-bg);
 }
 
 .mod-root .workspace-tab-header:not(.mod-stacked) {
     max-width: var(--tab-max-width);
-    transition: max-width 200ms ease-in-out;
 }
 /*Height of Note Tabs*/
 .workspace-tab-header-container-inner {
@@ -1531,6 +1527,14 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
     padding: 0px;
     transition: box-shadow 0.4s;
     }
+
+.callout:not(.is-collapsible) .callout-title{
+    border-image-slice: 1;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, transparent, rgb(var(--callout-color)), transparent);
+    background-color: rgba(var(--callout-color), 0.3);
+    padding: 2%;
+}
     
     .callout.is-collapsible .callout-title{
         cursor: var(--cursor-link);
@@ -1567,7 +1571,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
 
 /*#endregion*/
 
-    .callout.is-collapsible:not(.is-collapsed) {
+    .callout.is-collapsible:not(.is-collapsed), .callout:not(.is-collapsible):not(.is-collapsed) {
         box-shadow: inset 0em 0em 0.4em rgb(var(--callout-color));
     }
     .callout.is-collapsible.is-collapsed  .callout-title{
@@ -2187,8 +2191,8 @@ body:not(.is-mobile) .workspace-split.mod-left-split {
 
 /*Highlight active page*/
 body:not(.CG-active-background) .workspace-leaf.mod-active:not(:has(table.table-editor)) .node-insert-event:not(.markdown-embed-content, .markdown-preview-view), body:not(.CG-active-background) .workspace-leaf.mod-active iframe, body:not(.CG-active-background) .workspace-leaf.mod-active .surfing_app_zUmbJa, body:not(.CG-active-background) .workspace-split.mod-right-split .workspace-tabs .workspace-leaf.mod-active .node-insert-event, body:not(.CG-active-background) .workspace-split.mod-root .workspace-leaf.mod-active .view-content, body:not(.CG-active-background) .workspace-split.mod-horizontal .workspace-leaf.mod-active .workspace-leaf-content[data-type="style-settings"]{
-    box-shadow: inset 0em 0em 1.25em var(--text-accent);
-    background-color: var(--color-accent-active2);
+    box-shadow: inset 0em 0em 1.25em hsl(var(--custom-windhighlight-accent));
+    background-color: var(--customewindowhighlightaccent);
     transition: box-shadow 0.3s, background-color 0.3s;
 }
 
@@ -4196,11 +4200,16 @@ body:not(.is-phone) .vertical-tab-content-container{
     animation: none;
 }
 
-:not(.is-phone) .modal-bg{
-    box-shadow: inset 0em 0em 2.5em var(--text-accent);
-    background-color: var(--color-accent-active);
+body:not(.is-phone, .CG-settings-background) .modal-bg{
+    box-shadow: inset 0em 0em 2.5em hsl(var(--custom-windhighlight-accent));
+    background-color: var(--customewindowhighlightaccent);
     animation: appear 0.5s;
 }
+body:not(.is-phone).CG-settings-background .modal-bg{
+    background-color: transparent;
+}
+
+
 /*#endregion*//*#endregion*/
 /*#endregion*/
 /*#endregion*/
