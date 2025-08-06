@@ -1,12 +1,12 @@
 # Cyber Glow for Obsidian
 
-> ## **v2.0.6 Hotfix Changelog**
-> - Added: Style Settings option to change Bullet point styles, Default Triangle, Cirlce, Square, Eye of Horus, Phase-D
-> - Added: Style Settings to disable bullets in callout (Fixed)
-> - Removed: Some unnecessaary transitions
-> - Optimized: SVGs for smaller file size 
-> - Added: Adapted LennZone's Enhanced File Explorer Tree
-> - Removed: Mermaid Styling due to graphical issue after a recent update
+> ## **v2.0.9 Changelog**
+> Added: Style Settings to set custom color to background window highlight accent #107
+> Added: Style Settings option to remove background color in settings page #107
+> Removed: Transition for background color on hove
+> Removed: Safari Tab grow animation
+> Removed: Leftover Style Setting option to change color of classical blockquotes
+> Fixed: Simple Callout not having a title background like collapsible callouts
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
@@ -104,7 +104,6 @@ Some styles that first appeared in this CyberGlow:
 - [Deathau](https://github.com/deathau), his creator of 80's Neon theme inspired the widespread glow effects now present in my theme. 
 - [Benny Guo](https://github.com/bennyxguo/Obsidian-Obsidianite), formerly Tridiamond, his Obsidianite theme was the basis, originally intended to just a minor tweak of his theme.
 - [Sailkite](https://github.com/sailKitev) on Discord - Helped me with resolve my weird CSS issues and suggested ways to streamline some things
-- [ChuckHarmston](https://github.com/chuckharmston), Adapted his Safari Tab expander snippet.
 - [Colin Eckert's](https://github.com/colineckert) Things 2 Theme having working minimal headers in live preview and imo useful codeblock gutter line
 - [SlRvb](https://github.com/SlRvb) Adapted ITS Theme's Callout Infoboxes, grid, Kith and captions
 - [LennZone](https://github.com/LennZone) Adapted LennZone's Enhanced File Explorer Tree
