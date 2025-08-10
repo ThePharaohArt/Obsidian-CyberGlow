@@ -1,12 +1,12 @@
 # Cyber Glow for Obsidian
 
 > ## **v2.0.9 Changelog**
-> Added: Style Settings to set custom color to background window highlight accent #107
-> Added: Style Settings option to remove background color in settings page #107
-> Removed: Transition for background color on hove
-> Removed: Safari Tab grow animation
-> Removed: Leftover Style Setting option to change color of classical blockquotes
-> Fixed: Simple Callout not having a title background like collapsible callouts
+> - Added: Style Settings to set custom color to background window highlight accent #107
+> - Added: Style Settings option to remove background color in settings page #107
+> - Removed: Transition for background color on hove
+> - Removed: Safari Tab grow animation
+> - Removed: Leftover Style Setting option to change color of classical blockquotes
+> - Fixed: Simple Callout not having a title background like collapsible callouts
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
