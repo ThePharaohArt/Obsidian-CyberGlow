@@ -1,6 +1,6 @@
 # Cyber Glow for Obsidian
 
-> ## **v2.1.6 Changelog**
+> ## **v2.1.7 Changelog**
 > - Added: Style Settings option to remove toggle button color for the left sidepanel
 > - Added: Support for Make.md
 > - Added: Style Settings slider to control text glow for  bold/italic
@@ -15,6 +15,7 @@
 > - Removed: Hover background for chevrons in file explorer
 > - Removed: Duplicate Style Settings input for custom SidePanel icon
 > - Removed: Excessive padding in Style Settings container
+> - Fixed: Make.md Window Highlight not disabled when style setting option to turn it off is enabled
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
