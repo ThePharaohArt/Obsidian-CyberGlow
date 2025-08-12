@@ -1,12 +1,20 @@
 # Cyber Glow for Obsidian
 
-> ## **v2.0.9 Changelog**
-> - Added: Style Settings to set custom color to background window highlight accent #107
-> - Added: Style Settings option to remove background color in settings page #107
-> - Removed: Transition for background color on hove
-> - Removed: Safari Tab grow animation
-> - Removed: Leftover Style Setting option to change color of classical blockquotes
-> - Fixed: Simple Callout not having a title background like collapsible callouts
+> ## **v2.1.6 Changelog**
+> - Added: Style Settings option to remove toggle button color for the left sidepanel
+> - Added: Support for Make.md
+> - Added: Style Settings slider to control text glow for  bold/italic
+> - Added: Style Settings slider to control text glow for header text glow
+> - Added: Style Settings slider to control text glow for link text glow
+> - Added: Style Settings links for RetroOS 98 and Cyber Glow issues page to report problems
+> - Fixed: Header bolding text
+> - Fixed: Make.md menu from the incorrectly using margin to correct padding
+> - Fixed: Make.md file explorer text being shifted left
+> - Fixed: Window Highlight bug that causes the highlight to double when scrolling
+> - Fixed: Mini Header Indication not showing
+> - Removed: Hover background for chevrons in file explorer
+> - Removed: Duplicate Style Settings input for custom SidePanel icon
+> - Removed: Excessive padding in Style Settings container
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
