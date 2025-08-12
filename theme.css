@@ -167,12 +167,6 @@ settings:
       description: Remove Sidepanel Icon Color, Custom Sidepanel Icon toggle
       level: 1
       collapsed: true
-   -
-		id: mini-header-hide
-		title: Show Header Indication
-		description: Enabling this will show the small header indicator next to headers, such as H1, H2, etc.
-		type: class-toggle
-		default: true
    - 
         id: CG-SPColor
         title: 🆕 Remove Sidepanel Toggle Icon Color
@@ -304,12 +298,6 @@ settings:
       -
         label: Apple
         value: CG-Apple-hr
-   - 
-        title: Outgoing link color
-        id: outlink-color
-        type: variable-color
-        format: hex
-        default: '#FFA500'
    -
       id: CG-color
       title: 🆕 Color Picker
@@ -2466,7 +2454,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split {
 }
 
 /*Highlight active page*/
-body:not(.CG-active-background) .workspace-leaf.mod-active:not(:has(table.table-editor)) .node-insert-event:not(.markdown-embed-content, .markdown-preview-view, .is-live-preview), body:not(.CG-active-background) .workspace-leaf.mod-active iframe, body:not(.CG-active-background) .workspace-leaf.mod-active .surfing_app_zUmbJa, body:not(.CG-active-background) .workspace-split.mod-right-split .workspace-tabs .workspace-leaf.mod-active .node-insert-event, body:not(.CG-active-background) .workspace-split.mod-root .workspace-leaf.mod-active .view-content, body:not(.CG-active-background) .workspace-split.mod-horizontal .workspace-leaf.mod-active .workspace-leaf-content[data-type="style-settings"], .workspace-leaf.mod-active .mk-path-tree {
+body:not(.CG-active-background) .workspace-leaf.mod-active:not(:has(table.table-editor)) .node-insert-event:not(.markdown-embed-content, .markdown-preview-view, .is-live-preview), body:not(.CG-active-background) .workspace-leaf.mod-active iframe, body:not(.CG-active-background) .workspace-leaf.mod-active .surfing_app_zUmbJa, body:not(.CG-active-background) .workspace-split.mod-right-split .workspace-tabs .workspace-leaf.mod-active .node-insert-event, body:not(.CG-active-background) .workspace-split.mod-root .workspace-leaf.mod-active .view-content, body:not(.CG-active-background) .workspace-split.mod-horizontal .workspace-leaf.mod-active .workspace-leaf-content[data-type="style-settings"], body:not(.CG-active-background) .workspace-leaf.mod-active .mk-path-tree {
     box-shadow: inset 0em 0em 1.25em hsl(var(--custom-windhighlight-accent));
     background-color: var(--customewindowhighlightaccent);
     transition: box-shadow 0.3s, background-color 0.3s;
