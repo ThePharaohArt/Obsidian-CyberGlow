@@ -1,21 +1,27 @@
 # Cyber Glow for Obsidian
 
-> ## **v2.1.7 Changelog**
-> - Added: Style Settings option to remove toggle button color for the left sidepanel
-> - Added: Support for Make.md
-> - Added: Style Settings slider to control text glow for  bold/italic
-> - Added: Style Settings slider to control text glow for header text glow
-> - Added: Style Settings slider to control text glow for link text glow
-> - Added: Style Settings links for RetroOS 98 and Cyber Glow issues page to report problems
-> - Fixed: Header bolding text
-> - Fixed: Make.md menu from the incorrectly using margin to correct padding
-> - Fixed: Make.md file explorer text being shifted left
-> - Fixed: Window Highlight bug that causes the highlight to double when scrolling
-> - Fixed: Mini Header Indication not showing
-> - Removed: Hover background for chevrons in file explorer
-> - Removed: Duplicate Style Settings input for custom SidePanel icon
-> - Removed: Excessive padding in Style Settings container
-> - Fixed: Make.md Window Highlight not disabled when style setting option to turn it off is enabled
+> ## **v2.2.7 Changelog**
+> - Added: Style Settings for Changing muted Text color (Similar to pre v2)
+> - Added: Style Settings for Changing muted icon color (Similar to pre v2)
+> - Added: Style Setting option to revert to old callout style
+> - Added: Style Setting option to enable custom color and border for inline code
+> - Added: Style Setting option to enable custom color and border for inline code within codeblocks
+> - Added: Experimental Controls
+> - Updated: Callout Style influenced by shetland_pone's scifi codeblock
+> - Update: Callout colors in dark and light  
+> - Updated: Style Settings list design and hover/active action
+> - Updated: Sliding animations
+> - Updated: Colorful Folder with similar design to callouts can be disabled in style settings
+> - Fixed: Header 1 Glow Adjuster 
+> - Fixed: Changed the background of secondary pane in mobile settings, transparency caused some visual bug with the sliding
+> - Fixed: Uninstall button on mobile not using the proper background color
+> - Fixed: Coloring and background of sidepanel tabs
+> - Fixed: Number List where the number disappears when collapsed
+> - Fixed: Chevrons being hidden for Headings
+> - Replaced: Default slow appearing of mobile toolbar options container with a quicker animation
+> - Removed: Small margin on the left side for tab
+> - Removed: Unnecessary padding that the theme added to Mobile Toolbar
+> - Removed: code with the prefix "-webkit" and "-backdrop-"
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
