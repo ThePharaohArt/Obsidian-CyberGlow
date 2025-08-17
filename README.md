@@ -1,12 +1,13 @@
 # Cyber Glow for Obsidian
 
-> ## **v2.2.7 Changelog**
+> ## **v2.2.8 Changelog**
 > - Added: Style Settings for Changing muted Text color (Similar to pre v2)
 > - Added: Style Settings for Changing muted icon color (Similar to pre v2)
 > - Added: Style Setting option to revert to old callout style
 > - Added: Style Setting option to enable custom color and border for inline code
 > - Added: Style Setting option to enable custom color and border for inline code within codeblocks
 > - Added: Experimental Controls
+> - Added: Style Setting option to visually bold the headers #121
 > - Updated: Callout Style influenced by shetland_pone's scifi codeblock
 > - Update: Callout colors in dark and light  
 > - Updated: Style Settings list design and hover/active action
