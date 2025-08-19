@@ -1,4 +1,6 @@
 # Cyber Glow for Obsidian
+![GitHub last commit](https://img.shields.io/github/last-commit/ArtexJay/Obsidian-CyberGlow?color=573E7A&label=last%20update&logo=github&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/ArtexJay/Obsidian-CyberGlow?color=573E7A&logo=github&style=for-the-badge)
 
 > ## **v2.2.8 Changelog**
 > - Added: Style Settings for Changing muted Text color (Similar to pre v2)
