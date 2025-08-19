@@ -1,0 +1,45 @@
+name: Count Solved Issues
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour
+  workflow_dispatch:
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Count closed issues labeled "Solved"
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: "Solved",
+              state: "closed",
+              per_page: 100
+            });
+
+            const count = issues.length;
+
+            const fs = require('fs');
+            const badgeData = {
+              schemaVersion: 1,
+              label: "Solved Issues",
+              message: `${count}`,
+              color: "4CD66A"
+            };
+
+            fs.writeFileSync("solved-issues-badge.json", JSON.stringify(badgeData));
+      
+      - name: Commit badge data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add solved-issues-badge.json
+          git commit -m "Update Solved Issues badge"
+          git push
