@@ -1,8 +1,10 @@
 # Cyber Glow for Obsidian
-![GitHub last commit](https://img.shields.io/github/last-commit/ArtexJay/Obsidian-CyberGlow?color=573E7A&label=last%20update&logo=github&style=for-the-badge)
-![GitHub Repo stars](https://img.shields.io/github/stars/ArtexJay/Obsidian-CyberGlow?color=573E7A&logo=github&style=for-the-badge)
+![CyberGlow Version](https://img.shields.io/github/v/tag/ThePharaohArt/Obsidian-CyberGlow?label=CyberGlow%20Version&style=flat-square&color=4CADD6) 
+![Last Updated](https://img.shields.io/github/last-commit/ThePharaohArt/Obsidian-CyberGlow?label=Last%20Updated&style=flat-square&color=4CADD6)
+![Stars](https://img.shields.io/github/stars/ThePharaohArt/Obsidian-CyberGlow?label=Stars&style=flat-square&color=D6C84C)
+![Open Issues](https://img.shields.io/github/issues/ThePharaohArt/Obsidian-CyberGlow?label=Open%20Issues&style=flat-square&color=D64C4C)
 
-> ## **v2.2.8 Changelog**
+> ## **Changelog** 
 > - Added: Style Settings for Changing muted Text color (Similar to pre v2)
 > - Added: Style Settings for Changing muted icon color (Similar to pre v2)
 > - Added: Style Setting option to revert to old callout style
