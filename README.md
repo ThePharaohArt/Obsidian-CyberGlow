@@ -1,29 +1,19 @@
 # Cyber Glow for Obsidian
 ![CyberGlow Version](https://img.shields.io/github/v/tag/ThePharaohArt/Obsidian-CyberGlow?label=CyberGlow%20Version&style=flat-square&color=4CADD6) ![Last Updated](https://img.shields.io/github/last-commit/ThePharaohArt/Obsidian-CyberGlow?label=Last%20Updated&style=flat-square&color=4CADD6) ![Stars](https://img.shields.io/github/stars/ThePharaohArt/Obsidian-CyberGlow?label=Stars&style=flat-square&color=D6C84C) ![Open Issues](https://img.shields.io/github/issues/ThePharaohArt/Obsidian-CyberGlow?label=Open%20Issues&style=flat-square&color=D64C4C) ![Solved Issues](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ThePharaohArt/Obsidian-CyberGlow/main/solved-issues-badge.json&style=flat-square)
 
-> ## **Changelog** 
-> - Added: Style Settings for Changing muted Text color (Similar to pre v2)
-> - Added: Style Settings for Changing muted icon color (Similar to pre v2)
-> - Added: Style Setting option to revert to old callout style
-> - Added: Style Setting option to enable custom color and border for inline code
-> - Added: Style Setting option to enable custom color and border for inline code within codeblocks
-> - Added: Experimental Controls
-> - Added: Style Setting option to visually bold the headers #121
-> - Updated: Callout Style influenced by shetland_pone's scifi codeblock
-> - Update: Callout colors in dark and light  
-> - Updated: Style Settings list design and hover/active action
-> - Updated: Sliding animations
-> - Updated: Colorful Folder with similar design to callouts can be disabled in style settings
-> - Fixed: Header 1 Glow Adjuster 
-> - Fixed: Changed the background of secondary pane in mobile settings, transparency caused some visual bug with the sliding
-> - Fixed: Uninstall button on mobile not using the proper background color
-> - Fixed: Coloring and background of sidepanel tabs
-> - Fixed: Number List where the number disappears when collapsed
-> - Fixed: Chevrons being hidden for Headings
-> - Replaced: Default slow appearing of mobile toolbar options container with a quicker animation
-> - Removed: Small margin on the left side for tab
-> - Removed: Unnecessary padding that the theme added to Mobile Toolbar
-> - Removed: code with the prefix "-webkit" and "-backdrop-"
+> ## 2.3.4 **Changelog** 
+> - Added: Theme Style for Bases
+> - Update: Further Arranged and Grouped Style Setting Controls
+> - Fixed: Gap when Folder Icons are disables and chevrons are enabled
+> - Fixed: Accidental shift of icons/text in other sidepanel file trees
+> - Phone Fix: Returned Full screen sidepanels
+> - Phone Fix: Dim Settings Background color
+> - Fixed: Cases the scrollbar not being visible in settings
+> - Fixed: Mobile Navigation bar when using 3-button navigation on mobile
+> - Fixed: Right Sidepanel button icon relying on transformation scale to be flipped instead of rotation??
+> - Removed: Mobile Toolbar Custom Animation, due to base animation seemingly now being hardcoded
+> - Mobile: Suggestion prompt now has SciFi cutouts
+> - Changed: Default Scifi codeblocks is disabled, Style Settings to enable it
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
