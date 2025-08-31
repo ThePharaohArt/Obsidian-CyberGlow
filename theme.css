@@ -1,7 +1,5 @@
 /* Cyber Glow for Obsidian built by TheEmperorArt
 /* Please credit me if you modify or take parts for your own theme*/
-/*
-*/
 /* #region ======= Style Settings ======= 
 /* @settings
 name: Cyber Glow Tweakbox
@@ -245,6 +243,12 @@ settings:
       description: Controls for Callout, Codeblock, Headings, Custom Checkbox, Readable line width, Bullet Style
       level: 1
       collapsed: true
+   -
+      id: CG-strike
+      title: Strikeout Text
+      description: Disable the red strikout for better text readability
+      default: false
+      type: class-toggle
    -
       id: CG-custom-checkbox
       title: Custom Checkbox
@@ -908,7 +912,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     --custom-acc-bg: hsla(var(--custom-selected-accent), 0.5);
 
     --custom-windhighlight-accent: var(--color-accent-hsl);
-    --customewindowhighlightaccent: hsla(var(--custom-windhighlight-accent), 0.25);
+    --customewindowhighlightaccent: hsla(var(--custom-windhighlight-accent), 0.1);
 
    /*Custom Color for sidepanel selected file/option */
    --custom-boldText-glow: var(--color-accent-hsl);
@@ -2098,7 +2102,7 @@ body:not(.calloutcut)  .callout.is-collapsible:not(.is-collapsed)::after, body:n
         box-shadow: inset 0em 0em 0.4em rgb(var(--callout-color));
         }
 
-body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):hover{
+body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover{
     clip-path: polygon(0% 0%, calc(100% - 17px) 0%, 100% 17px, 100% 100%, 17px 100%, 0% calc(100% - 17px));
 }
 
@@ -2792,7 +2796,7 @@ li:not(.is-collapsed) .list-bullet:after{
     transform: translate(8px, 6px) rotate(90deg);
 }
 .cm-formatting-list .list-bullet:after, .markdown-source-view.mod-cm6 .cm-formatting-list-ul, .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
-    transform: translate(1.5px, 5px) rotate(90deg);
+    transform: translate(10.5px, 5px) rotate(90deg);
 }
 
 .CG-EyeofHorus li:not(.is-collapsed) .list-bullet:after, .CG-EyeofHorus .cm-formatting-list .list-bullet:after, .CG-EyeofHorus .markdown-source-view.mod-cm6 .cm-formatting-list-ul, .CG-EyeofHorus .markdown-source-view.mod-cm6 .cm-formatting-list-ol {
@@ -2848,10 +2852,10 @@ text-shadow:none;
     color: var(--list-marker-color-hover);
     transition: color 0.3s;
 }
-.cm-line svg.svg-icon.right-triangle, .view-content .list-collapse-indicator svg.svg-icon, li .collapse-indicator svg.svg-icon{
+ .view-content .list-collapse-indicator svg.svg-icon, li .collapse-indicator svg.svg-icon, .HyperMD-list-line .collapse-indicator svg.svg-icon{
 display: none;}
 
-.markdown-rendered .list-collapse-indicator, .markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line:not(.cm-active):not(.HyperMD-task-line) .cm-fold-indicator .collapse-indicator{
+.HyperMD-list-line.markdown-rendered .list-collapse-indicator, .markdown-source-view.mod-cm6.is-live-preview .cm-line.HyperMD-list-line:not(.cm-active):not(.HyperMD-task-line) .cm-fold-indicator .collapse-indicator, .markdown-preview-view .heading-collapse-indicator, .markdown-preview-view .collapse-indicator{
     cursor: pointer;
 }
 
@@ -3095,11 +3099,11 @@ body:not(.is-mobile) .empty-state-action {
     text-shadow: 0 0 var(--CG-Bold-slider1) hsl(var(--custom-boldText-glow)), 0 0 var(--CG-Bold-slider2) hsl(var(--custom-boldText-glow));
 }
 /*Styles Strikeout*/
-.cm-strikethrough, del, ul > li.task-list-item[data-task="x"], ul > li.task-list-item[data-task="X"] {
+body:not(.CG-strike) .cm-strikethrough, del, ul > li.task-list-item[data-task="x"], body:not(.CG-strike) ul > li.task-list-item[data-task="X"] {
     text-decoration-color: var(--text-close-color);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
     text-decoration-style: double;
-    text-shadow: 0 0 5px var(--text-close-color), 0 0 10px var(--text-close-color);
+    text-shadow: 0 0 3px var(--text-close-color), 0 0 5px var(--text-close-color);
 }
 /*Styles Underline*/
 span.cm-html-embed, u {
@@ -3413,6 +3417,52 @@ textarea:active, textarea:focus, input[type='text']:active, input[type='search']
     margin-top: calc(var(--h1-size) - 0.1em);
     color: var(--text-accent);
 }
+
+.mini-header-hide .el-h1 h1::before {
+    content: 'H1';
+    margin-top: calc(var(--h1-size) - 1.5em);
+    color: var(--text-accent);
+}
+
+.mini-header-hide .el-h2 h2::before {
+    content: 'H2';
+    margin-top: calc(var(--h2-size) - 1em);
+    color: var(--h2-glow);
+}
+.mini-header-hide .el-h3 h3::before {
+    content: 'H3';
+    margin-top: calc(var(--h3-size) - 1em);
+    color: var(--h3-glow);
+}
+.mini-header-hide .el-h4 h4::before {
+    content: 'H4';
+    margin-top: calc(var(--h4-size) - 1em);
+    color: var(--h4-glow);
+}
+.mini-header-hide .el-h5 h5::before{
+    content: 'H5';
+    margin-top: calc(var(--h5-size) - 1em);
+    color: var(--h5-glow);
+}
+.mini-header-hide .el-h6 h6::before {
+    content: 'H6';
+    margin-top: calc(var(--h6-size) - 1em);
+    color: var(--h6-glow);
+}
+
+
+
+ .el-h2 h2::before, .el-h3 h3::before, .el-h4 h4::before, .el-h5 h5::before, .el-h6 h6::before, .el-h1 h1::before  {
+    font-size: 0.7rem;
+    margin-left: -45px;
+    margin-right: 25px;
+    text-shadow: none;
+    content: 'HH';
+    color: transparent;
+}
+
+
+
 .mini-header-hide .markdown-source-view.mod-cm6 :not(.cm-active).cm-line:not(.cm-table-widget .table-wrapper .cm-line):has(.cm-header-2)::before {
     content: 'H2';
     margin-top: calc(var(--h2-size) - 0.2em);
