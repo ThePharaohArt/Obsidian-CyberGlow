@@ -1,19 +1,14 @@
 # Cyber Glow for Obsidian
 ![CyberGlow Version](https://img.shields.io/github/v/tag/ThePharaohArt/Obsidian-CyberGlow?label=CyberGlow%20Version&style=flat-square&color=4CADD6) ![Last Updated](https://img.shields.io/github/last-commit/ThePharaohArt/Obsidian-CyberGlow?label=Last%20Updated&style=flat-square&color=4CADD6) ![Stars](https://img.shields.io/github/stars/ThePharaohArt/Obsidian-CyberGlow?label=Stars&style=flat-square&color=D6C84C) ![Open Issues](https://img.shields.io/github/issues/ThePharaohArt/Obsidian-CyberGlow?label=Open%20Issues&style=flat-square&color=D64C4C) ![Solved Issues](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ThePharaohArt/Obsidian-CyberGlow/main/solved-issues-badge.json&style=flat-square)
 
-> ## 2.3.4 **Changelog** 
-> - Added: Theme Style for Bases
-> - Update: Further Arranged and Grouped Style Setting Controls
-> - Fixed: Gap when Folder Icons are disables and chevrons are enabled
-> - Fixed: Accidental shift of icons/text in other sidepanel file trees
-> - Phone Fix: Returned Full screen sidepanels
-> - Phone Fix: Dim Settings Background color
-> - Fixed: Cases the scrollbar not being visible in settings
-> - Fixed: Mobile Navigation bar when using 3-button navigation on mobile
-> - Fixed: Right Sidepanel button icon relying on transformation scale to be flipped instead of rotation??
-> - Removed: Mobile Toolbar Custom Animation, due to base animation seemingly now being hardcoded
-> - Mobile: Suggestion prompt now has SciFi cutouts
-> - Changed: Default Scifi codeblocks is disabled, Style Settings to enable it
+> ## 2.3.7 **Changelog** 
+> - Added: Mini Headers now can be toggled in Reader view
+> - Added: Style Setting option to remove the Strikout Style for better readability
+> - Fixed: Collapsible Chevrons not appearing for headers in Live Preview
+> - Fixed: Incorrect Scifi Clipping on bases when hovering
+> - Fixed: Header when Header is empty
+> - Fixed: Bullet List alignment (might need to be altered further if there are issues)
+> - Modified: Reduced the intensity of the window highlighter
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
