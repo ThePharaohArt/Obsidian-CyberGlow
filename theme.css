@@ -1126,7 +1126,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
 	--callout-tip: var(--callout-important);
 	--callout-important: 255, 255, 0;
 	--callout-quote: 255, 204, 153;
-    --callout-help: 0, 255, 255;
+    --callout-help: rgb(0, 255, 255);
 	--callout-default: 240, 240, 255;
     --callout-success: 0, 255, 128;
     --callout-warning: 255, 128, 0;
@@ -1186,7 +1186,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
 	--callout-tip: var(--callout-important);
 	--callout-important: 128, 128, 0;
 	--callout-quote: 153, 122, 102;
-	--callout-help: 0, 128, 128;
+	--callout-help: rgb(0, 128, 128);
 	--callout-default: 20, 20, 20;
 	--callout-success: 0, 128, 64;
 	--callout-warning: 153, 77, 0;
@@ -2006,8 +2006,8 @@ color: var(--text-on-accent);
 .callout:not(.is-collapsible) .callout-title{
     border-image-slice: 1;
     border-top: 2px solid;
-    border-image-source: linear-gradient(to right, transparent, rgb(var(--callout-color)), transparent);
-    background-color: rgba(var(--callout-color), 0.27);
+    border-image-source: linear-gradient(to right, transparent, var(--callout-color), transparent);
+    background-color: color-mix(in srgb, var(--callout-color) 27%, transparent);
     padding: 2%;
 }
     
@@ -2018,19 +2018,19 @@ color: var(--text-on-accent);
     /*Callout Cursor Change*/
         .callout.is-collapsible .callout-title{
         padding: 2% 2% 2% 2.5%;
-        background-color: rgba(var(--callout-color), 0.27);
+        background-color: color-mix(in srgb, var(--callout-color) 27%, transparent);
         transition: background-color 0.3s;
         }
  .callout-content {
         padding: 2%;
-        background-color: rgba(var(--callout-color), 0.25);
+        background-color: color-mix(in srgb, var(--callout-color) 25%, transparent);
         transition: background-color 0.3s;
     }
     
     .callout.is-collapsible .callout-title{
         border-image-slice: 1;
         border-top: 2px solid;
-        border-image-source: linear-gradient(to right, transparent, rgb(var(--callout-color)), transparent);
+        border-image-source: linear-gradient(to right, transparent, var(--callout-color), transparent);
         border-bottom: 2px solid;
     }
 
@@ -2053,7 +2053,7 @@ color: var(--text-on-accent);
 /*#endregion*/
 
     .callout.is-collapsible:not(.is-collapsed), .callout:not(.is-collapsible):not(.is-collapsed) {
-        box-shadow: inset 0em 0em 0.4em rgb(var(--callout-color));
+        box-shadow: inset 0em 0em 0.4em var(--callout-color);
     }
 
 body:not(.calloutcut)  .callout, body:not(.calloutcut)  .callout.is-collapsible.is-collapsed .callout-title {
@@ -2082,7 +2082,7 @@ body:not(.calloutcut)  .callout.is-collapsible:not(.is-collapsed)::before, body:
   clip-path: polygon(
     10px 0px, calc(100% - 10px) 0px, calc(100% - 20px) 10px, 20px 10px
   );
-        box-shadow: inset 0em 0em 0.4em rgb(var(--callout-color));
+        box-shadow: inset 0em 0em 0.4em var(--callout-color);
         }
 
 
@@ -2099,7 +2099,7 @@ body:not(.calloutcut)  .callout.is-collapsible:not(.is-collapsed)::after, body:n
   clip-path: polygon(
     10px 0px, calc(100% - 10px) 0px, calc(100% - 20px) 10px, 20px 10px
   );
-        box-shadow: inset 0em 0em 0.4em rgb(var(--callout-color));
+        box-shadow: inset 0em 0em 0.4em var(--callout-color);
         }
 
 body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover{
@@ -2107,7 +2107,7 @@ body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-tabl
 }
 
 .callout-title-inner, .callout-icon svg{
-    filter: drop-shadow(0 0 4px rgb(var(--callout-color)));
+    filter: drop-shadow(0 0 4px var(--callout-color));
 }
 
 
@@ -2125,10 +2125,10 @@ body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-tabl
     
     /*Callout Hover Style*/
     .callout.is-collapsible .callout-title:hover {
-        background-color: rgba(var(--callout-color), 0.4);
+        background-color: color-mix(in srgb, var(--callout-color) 40%, transparent);
     }
     .callout.is-collapsible .callout-title:active {
-        background-color: rgba(var(--callout-color), 0.5);
+        background-color: color-mix(in srgb, var(--callout-color) 50%, transparent);
     }
     
 /*#region ----- Callout Kith ----- */
@@ -2142,27 +2142,27 @@ body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-tabl
 
   .callout[data-callout=kith][data-callout-metadata=family] {
     --callout-icon: user;
-    --callout-color: 115, 167, 202;
+    --callout-color: rgb(115, 167, 202);
   }
   .callout[data-callout=kith][data-callout-metadata=friend] {
     --callout-icon: user-check;
-    --callout-color: 115, 202, 144;
+    --callout-color: rgb(115, 202, 144);
   }
   .callout[data-callout=kith][data-callout-metadata=romantic] {
     --callout-icon: user-plus;
-    --callout-color: 202, 115, 180;
+    --callout-color: rgb(202, 115, 180);
   }
   .callout[data-callout=kith][data-callout-metadata=antagonist] {
     --callout-icon: user-x;
-    --callout-color: 241, 74, 74;
+    --callout-color: rgb(241, 74, 74);
   }
 
   .callout[data-callout=kith] {
-    background: rgba(var(--callout-color), 0.5);
+    background: color-mix(in srgb, var(--callout-color) 50%, transparent);
     padding: 5px;
     border-image-slice: 1;
     border-top: 2px solid;
-    border-image-source: linear-gradient(to right, transparent, rgb(var(--callout-color)), transparent);
+    border-image-source: linear-gradient(to right, transparent, var(--callout-color), transparent);
     border-bottom: 2px solid;
   }
   
@@ -2170,7 +2170,7 @@ body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-tabl
     
 /*#region ----- Infobox ------*/
 .callout[data-callout="infobox"]{
-    --callout-color:212, 162, 215;
+    --callout-color:rgb(212, 162, 215);
 }
 
 :is(.is-mobile:not(.is-tablet), .is-mobile .is-live-preview, .is-live-preview :not(.markdown-rendered)) .callout[data-callout~=infobox]:not([data-callout-metadata~=mobile]) {
@@ -2251,16 +2251,16 @@ body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-tabl
 /*#region ---- ITS Image Grid ----- */
 .theme-light .callout.callout[data-callout=grid] .callout-content,     .theme-dark .callout.callout[data-callout=grid] .callout-content{
     border-image-slice: 1;
-    border-image-source: linear-gradient(to right, transparent, rgb(var(--callout-color)), transparent);
+    border-image-source: linear-gradient(to right, transparent, var(--callout-color), transparent);
     border-bottom: 2px solid;
     border-top: 2px solid;
 
 }
 .theme-light .callout.callout[data-callout=grid] .callout-content{
-    --callout-color: 0, 31, 63;
+    --callout-color: rgb(0, 31, 63);
 }
 .theme-dark .callout.callout[data-callout=grid] .callout-content{
-    --callout-color: 0, 116, 217;
+    --callout-color: rgb(0, 116, 217);
 }
 
 
@@ -2315,15 +2315,15 @@ body:not(.calloutcut) .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-tabl
 /*#region ---- ITS Captions ----*/
 .callout-content, .callout.callout[data-callout~=caption] > .callout-content, .callout.callout[data-callout=grid] .callout-content{
     border-image-slice: 1;
-    border-image-source: linear-gradient(to right, transparent, rgb(var(--callout-color)), transparent);
+    border-image-source: linear-gradient(to right, transparent, var(--callout-color), transparent);
     border-bottom: 1px solid;
     border-top: 2px solid;
 }
 .theme-dark .callout.callout[data-callout~=caption] > .callout-content{
-    --callout-color: 178, 223, 181;
+    --callout-color: rgb(178, 223, 181);
 }
 .theme-light .callout.callout[data-callout~=caption] > .callout-content{
-    --callout-color: 102, 187, 106;
+    --callout-color: rgb(102, 187, 106);
 }
 .callout.callout[data-callout~=caption] {
     background: transparent;
