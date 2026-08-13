@@ -1,8 +1,8 @@
 # Cyber Glow for Obsidian
 ![CyberGlow Version](https://img.shields.io/github/v/tag/ThePharaohArt/Obsidian-CyberGlow?label=CyberGlow%20Version&style=flat-square&color=4CADD6) ![Last Updated](https://img.shields.io/github/last-commit/ThePharaohArt/Obsidian-CyberGlow?label=Last%20Updated&style=flat-square&color=4CADD6) ![Stars](https://img.shields.io/github/stars/ThePharaohArt/Obsidian-CyberGlow?label=Stars&style=flat-square&color=D6C84C) ![Open Issues](https://img.shields.io/github/issues/ThePharaohArt/Obsidian-CyberGlow?label=Open%20Issues&style=flat-square&color=D64C4C) ![Solved Issues](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ThePharaohArt/Obsidian-CyberGlow/main/solved-issues-badge.json&style=flat-square)
 
-> ## 2.7.0 **Changelog** 
-> - Huge Changelog, see the full changelog in the release section.
+> ## 2.7.0 **Changes** 
+> - Huge amounts of changes, too many to list here, see the full changelog in the release section.
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
