@@ -1,5 +1,6 @@
-/* Cyber Glow for Obsidian built by TheEmperorArt
+/* Cyber Glow for Obsidian built by ThePharaohArt
 /* Please credit me if you modify or take parts for your own theme*/
+
 /* #region ======= Style Settings ======= 
 /* @settings
 name: Cyber Glow Tweakbox
@@ -61,7 +62,7 @@ settings:
       min: 0.10
       max: 1
       step: 0.01
-      default: 0.45
+      default: 0.40
    - 
       id: CG-workspace-background-blur
       title: Background blur
@@ -213,7 +214,7 @@ settings:
       type: class-toggle
    -
 		id: CG-scifiFolder
-		title: SciFi Folders
+		title: Disable SciFi Folders
 		description: Enabling will restores Colorful Folders to the original rectangular design.
 		type: class-toggle
 		default: false
@@ -722,13 +723,13 @@ settings:
         id: outlink-color
         type: variable-color
         format: hex
-        default: '#FFA500'
+        default: '#FF00FF'
    - 
         title: Internal link color
         id: inlink-color
         type: variable-color
         format: hex
-        default: '#ffc400'
+        default: '#00FFFF'
    -
       id: CG-link-slider1
       title: Link Primary Glow
@@ -815,19 +816,6 @@ settings:
       description: Experiments, May be Abandoned/Unimplemented
       level: 1
       collapsed: true
-   - 
-      id: CG-FileTreeShade1
-      title: File Tree Shade Test 1
-      description: Adds a background shade to file tree items **DO NOT REPORT ISSUES FOR THIS CONTROL**
-      type: class-toggle
-      default: false
-   - 
-      id: CG-FileTreeShade2
-      title: File Tree Shade Test 2
-      description: Adds a background shade to file tree items **DO NOT REPORT ISSUES FOR THIS CONTROL**
-      type: class-toggle
-      default: false
-
 */
 /* @settings
 name: Cyber Glow Support 
@@ -886,6 +874,11 @@ body:not(.restore-header){
     --h6-weight: 500;
 }
 body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-buttons, .is-mobile .view-header .view-action, .mobile-tab-switcher-menubar, .mobile-navbar-actions, .is-mobile {
+
+    --caret-color: var(--text-normal);
+    --navbar-height:20px
+
+
     /*metadata*/
     --metadata-label-width: 10em;
     --metadata-gap: 5px;
@@ -912,7 +905,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     --custom-acc-bg: hsla(var(--custom-selected-accent), 0.5);
 
     --custom-windhighlight-accent: var(--color-accent-hsl);
-    --customewindowhighlightaccent: hsla(var(--custom-windhighlight-accent), 0.1);
+    --customewindowhighlightaccent: hsla(var(--custom-windhighlight-accent), 0.2);
 
    /*Custom Color for sidepanel selected file/option */
    --custom-boldText-glow: var(--color-accent-hsl);
@@ -965,8 +958,8 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     --custom-hovercolor: var(--text-on-accent);
     --nav-hover-color: var(--custom-hovercolor);
     /*Scrollbar*/
-    --scrollbar-thumb-bg: var(--color-accent-active);
-    --scrollbar-active-thumb-bg: var(--text-accent);
+    --scrollbar-thumb-bg: var(--text-accent);
+    --scrollbar-active-thumb-bg: var(--color-accent-faint);
     --scrollbar-bg: var(--text-selection);
     /*Drag Ghost*/
     --drag-ghost-text-color: var(--text-accent);
@@ -975,8 +968,8 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     --link-external-color: var(--outlink-color);
     --link-external-color-hover: var(--link-external-color);
     --internal-link-hover: var(--link-color);
-    --inlink-color: #FFA500;
-    --outlink-color: #ffc400;
+    --inlink-color: #007BFF;
+    --outlink-color: #FF4500;
     --link-color: var(--inlink-color);
     /*Vault Name*/
     --vault-name-font-size: var(--font-ui-medium);
@@ -1136,7 +1129,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
 /* ======= Light Theme ======= */
 .theme-light {
     --New-Obsidiantoggle: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 512 512' fill='none' %3e%3cdefs%3e%3cradialGradient id='A' cx='0' cy='0' r='1' gradientTransform='matrix(-48 -185 123 -32 179 429.7)' href='%23J'%3e%3cstop stop-color='%23fff' stop-opacity='.4'/%3e%3cstop offset='1' stop-opacity='.1'/%3e%3c/radialGradient%3e%3cradialGradient id='B' cx='0' cy='0' r='1' gradientTransform='matrix(41 -310 229 30 341.6 351.3)' href='%23J'%3e%3cstop stop-color='%23fff' stop-opacity='.6'/%3e%3cstop offset='1' stop-color='%23fff' stop-opacity='.1'/%3e%3c/radialGradient%3e%3cradialGradient id='C' cx='0' cy='0' r='1' gradientTransform='matrix(57 -261 178 39 190.5 296.3)' href='%23J'%3e%3cstop stop-color='%23fff' stop-opacity='.8'/%3e%3cstop offset='1' stop-color='%23fff' stop-opacity='.4'/%3e%3c/radialGradient%3e%3cradialGradient id='D' cx='0' cy='0' r='1' gradientTransform='matrix(-79 -133 153 -90 321.4 464.2)' href='%23J'%3e%3cstop stop-color='%23fff' stop-opacity='.3'/%3e%3cstop offset='1' stop-opacity='.3'/%3e%3c/radialGradient%3e%3cradialGradient id='E' cx='0' cy='0' r='1' gradientTransform='matrix(-29 136 -92 -20 300.7 149.9)' href='%23J'%3e%3cstop stop-color='%23fff' stop-opacity='0'/%3e%3cstop offset='1' stop-color='%23fff' stop-opacity='.2'/%3e%3c/radialGradient%3e%3cradialGradient id='F' cx='0' cy='0' r='1' gradientTransform='matrix(72 73 -155 153 137.8 225.2)' href='%23J'%3e%3cstop stop-color='%23fff' stop-opacity='.2'/%3e%3cstop offset='1' stop-color='%23fff' stop-opacity='.4'/%3e%3c/radialGradient%3e%3cradialGradient id='G' cx='0' cy='0' r='1' gradientTransform='matrix(20 118 -251 43 215.1 273.7)' href='%23J'%3e%3cstop stop-color='%23fff' stop-opacity='.1'/%3e%3cstop offset='1' stop-color='%23fff' stop-opacity='.3'/%3e%3c/radialGradient%3e%3cradialGradient id='H' cx='0' cy='0' r='1' gradientTransform='matrix(-162 -85 268 -510 374.4 371.7)' href='%23J'%3e%3cstop stop-color='%23fff' stop-opacity='.2'/%3e%3cstop offset='.5' stop-color='%23fff' stop-opacity='.2'/%3e%3cstop offset='1' stop-color='%23fff' stop-opacity='.3'/%3e%3c/radialGradient%3e%3cfilter id='I' x='80.1' y='37' width='351.1' height='443.2' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-opacity='0'/%3e%3cfeBlend in='SourceGraphic'/%3e%3cfeGaussianBlur stdDeviation='6.5'/%3e%3c/filter%3e%3clinearGradient id='J' gradientUnits='userSpaceOnUse'/%3e%3c/defs%3e%3crect fill='%23fff' width='512' height='512' rx='100'/%3e%3cg filter='url(%23I)'%3e%3cpath d='M359.2 437.5c-2.6 19-21.3 33.9-40 28.7-26.5-7.2-57.2-18.6-84.8-20.7l-42.4-3.2a28 28 0 0 1-18-8.3l-73-74.8a27.7 27.7 0 0 1-5.4-30.7l46.8-103.7c1.6-5.1 7.8-49.9 11.4-73.9a28 28 0 0 1 9-16.5L249 57.2a28 28 0 0 1 40.6 3.4l72.6 91.6a29.5 29.5 0 0 1 6.2 18.3c0 17.3 1.5 53 11.2 76a301.3 301.3 0 0 0 35.6 58.2 14 14 0 0 1 1 15.6c-6.3 10.7-18.9 31.3-36.6 57.6a142.2 142.2 0 0 0-20.5 59.6z' fill='%23000' fill-opacity='.3'/%3e%3c/g%3e%3cpath d='M359.9 434.3c-2.6 19.1-21.3 34-40 28.9-26.4-7.3-57-18.7-84.7-20.8l-42.3-3.2a27.9 27.9 0 0 1-18-8.4l-73-75a27.9 27.9 0 0 1-5.4-31l46.8-104.2c1.7-5.1 7.8-50 11.4-74.2a28 28 0 0 1 9-16.6l86.2-77.5a28 28 0 0 1 40.6 3.5l72.5 92a29.7 29.7 0 0 1 6.2 18.3c0 17.4 1.5 53.2 11.1 76.3a303 303 0 0 0 35.6 58.5 14 14 0 0 1 1.1 15.7c-6.4 10.8-18.9 31.4-36.7 57.9a143.3 143.3 0 0 0-20.4 59.8z' fill='%23000'/%3e%3cpath d='M182.7 436.4c33.9-68.7 33-118 18.5-153-13.2-32.4-37.9-52.8-57.3-65.5-.4 1.9-1 3.7-1.8 5.4L96.5 324.8a27.9 27.9 0 0 0 5.5 31l72.9 75c2.3 2.3 5 4.2 7.8 5.6Z' fill='url(%23A)'/%3e%3cpath d='M274.9 297c9.1.9 18 2.9 26.8 6.1 27.8 10.4 53.1 33.8 74 78.9 1.5-2.6 3-5.1 4.6-7.5a1222 1222 0 0 0 36.7-57.9 14 14 0 0 0-1-15.7 303 303 0 0 1-35.7-58.5c-9.6-23-11-58.9-11.1-76.3 0-6.6-2.1-13.1-6.2-18.3l-72.5-92-1.2-1.5c5.3 17.5 5 31.5 1.7 44.2-3 11.8-8.6 22.5-14.5 33.8-2 3.8-4 7.7-5.9 11.7a140 140 0 0 0-15.8 58c-1 24.2 3.9 54.5 20 95Z' fill='url(%23B)'/%3e%3cpath d='M274.8 297c-16.1-40.5-21-70.8-20-95 1-24 8-42 15.8-58l6-11.7c5.8-11.3 11.3-22 14.4-33.8a78.5 78.5 0 0 0-1.7-44.2 28 28 0 0 0-39.4-2l-86.2 77.5a28 28 0 0 0-9 16.6L144.2 216c0 .7-.2 1.3-.3 2 19.4 12.6 44 33 57.3 65.3 2.6 6.4 4.8 13.1 6.4 20.4a200 200 0 0 1 67.2-6.8Z' fill='url(%23C)'/%3e%3cpath d='M320 463.2c18.6 5.1 37.3-9.8 39.9-29a153 153 0 0 1 15.9-52.2c-21-45.1-46.3-68.5-74-78.9-29.5-11-61.6-7.3-94.2.6 7.3 33.1 3 76.4-24.8 132.7 3.1 1.6 6.6 2.5 10.1 2.8l43.9 3.3c23.8 1.7 59.3 14 83.2 20.7Z' fill='url(%23D)'/%3e%3cg fill-rule='evenodd'%3e%3cpath d='M255 200.5c-1.1 24 1.9 51.4 18 91.8l-5-.5c-14.5-42.1-17.7-63.7-16.6-88 1-24.3 8.9-43 16.7-59 2-4 6.6-11.5 8.6-15.3 5.8-11.3 9.7-17.2 13-27.5 4.8-14.4 3.8-21.2 3.2-28 3.7 24.5-10.4 45.8-21 67.5a145 145 0 0 0-17 59Z' fill='url(%23E)'/%3e%3cpath d='M206 285.1c2 4.4 3.7 8 4.9 13.5l-4.3 1c-1.7-6.4-3-11-5.5-16.5-14.6-34.3-38-52-57-65 23 12.4 46.7 31.9 61.9 67Z' fill='url(%23F)'/%3e%3cpath d='M211.1 303c8 37.5-1 85.2-27.5 131.6 22.2-46 33-90.1 24-131l3.5-.7Z' fill='url(%23G)'/%3e%3cpath d='M302.7 299.5c43.5 16.3 60.3 52 72.8 81.9-15.5-31.2-37-65.7-74.4-78.5-28.4-9.8-52.4-8.6-93.5.7l-.9-4c43.6-10 66.4-11.2 96 0Z' fill='url(%23H)'/%3e%3c/g%3e%3c/svg%3e");
-    --color-base-00: rgb(230, 229, 229);
+    --color-base-00: rgb(255, 255, 255);
     --color-base-20: rgb(194, 194, 194);
     --color-base-05: #f6f4f4b7;
     --bg-primary: 230, 229, 229;
@@ -1289,11 +1282,11 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
     color: var(--icon-color-hover);
 }
 
-.clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"], button.clickable-icon[aria-label="Remove filter"],  .is-mobile .mod-left-split-toggle, .CG-MObsidian-sbt.is-mobile .mod-left-split-toggle):hover, .search-result-hover-button:hover, .input-right-decorator.clickable-icon:hover, .input-right-decorator.clickable-icon.is-active:hover, .workspace-leaf-content:not([data-type="file-explorer"], [data-type=bookmarks]  ) .tree-item:not(.graph-control-section) .tree-item-self .tree-item-icon:hover, .graph-controls-button:hover, .mod-root .mod-pinned:hover, .mobile-toolbar-option:hover, #cMenuToolbarModalBar.top :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):not(.cMenuToolbar-Divider-Line):hover, :is(#cMenuToolbarModalBar, #cMenuToolbarPopoverBar) button[class^=cMenuToolbarCommandsubItem]>.subitem button.menu-item:hover, #cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic:not(.top) button[class^=cMenuToolbarCommandsubItem]:hover, #cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic:not(.top) :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):hover, .bases-td.mod-implicit:hover {
+.clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"], button.clickable-icon[aria-label="Remove filter"],  .is-mobile .mod-left-split-toggle, .CG-MObsidian-sbt.is-mobile .mod-left-split-toggle, .modal-close-button):hover, .search-result-hover-button:hover, .input-right-decorator.clickable-icon:hover, .input-right-decorator.clickable-icon.is-active:hover, .workspace-leaf-content:not([data-type="file-explorer"], [data-type=bookmarks] ) .tree-item:not(.graph-control-section) .tree-item-self .tree-item-icon:hover, .graph-controls-button:hover, .mod-root .mod-pinned:hover, .mobile-toolbar-option:hover, #cMenuToolbarModalBar.top :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):not(.cMenuToolbar-Divider-Line):hover, :is(#cMenuToolbarModalBar, #cMenuToolbarPopoverBar) button[class^=cMenuToolbarCommandsubItem]>.subitem button.menu-item:hover, #cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic:not(.top) button[class^=cMenuToolbarCommandsubItem]:hover, #cMenuToolbarModalBar.cMenuToolbarDefaultAesthetic:not(.top) :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):hover, .bases-td.mod-implicit:hover, .markdown-embed-link:hover, .file-embed-link:hover, .is-phone .modal .modal-setting-back-button {
     background-color: var(--hover-bg);
-    box-shadow: inset 0em 0em 0.7em var(--hover-color);
+    box-shadow: inset 0em 0em 1em var(--hover-color);
     border-radius: var(--radius-s);
-    transition: animation 0.3s, color 0.3s !important;
+    transition: animation 0.3s !important;
     color: var(--icon-color-hover);
 }
 
@@ -1326,20 +1319,20 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
 body.is-hidden-frameless .sidebar-toggle-button.mod-left:active{
         animation: 0.3s bigpressed forwards;
     background-color: var(--hover-bg2);
-    box-shadow: inset 0em 0em 1em var(--hover-color);
+    box-shadow: inset 0em 0em 1.5em var(--hover-color);
     transition: background-color 0.2s, box-shadow 0.2s, animation 0.2s, border 1s !important;
 }
 body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover{
         background-color: var(--hover-bg);
-    box-shadow: inset 0em 0em 0.7em var(--hover-color);
-    transition: animation 0.3s, color 0.3s !important;
+    box-shadow: inset 0em 0em 1em var(--hover-color);
+    transition: animation 0.3s !important;
 }
 
-.clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"], button.clickable-icon[aria-label="Remove filter"], .is-mobile .mod-left-split-toggle, .CG-MObsidian-sbt.is-mobile .mod-left-split-toggle ):active, .markdown-rendered button.copy-code-button:active, .mod-windows .titlebar-button:not(.mod-logo):active, .status-bar-item.mod-clickable:active, .clickable-icon.nav-action-button:active, .search-result-hover-button:active, .pdf-sidebar-container .thumbnail:active, :not(.is-mobile) .empty-state-action:active, .metadata-property-icon:active, .sidebar-toggle-button.mod-right .clickable-icon:active, .status-bar-item.plugin-obsidian-languagetool-plugin:active, .canvas-control-item:active,  .canvas-card-menu .canvas-card-menu-button.mod-draggable:active, .is-mobile .workspace-drawer-tab-option-item:active, .is-mobile .workspace-drawer-header-switcher:active, .is-mobile .workspace-drawer-header-icon:active, .workspace-drawer-header-icon:active, .workspace-drawer-active-tab-icon:active, .workspace-drawer-active-tab-back-icon:active, 
-.workspace-drawer-active-tab-title:active, .is-phone .modal-setting-back-button:active, .table-col-btn:active, .bases-td.mod-implicit:active    {
+.clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"], button.clickable-icon[aria-label="Remove filter"], .is-mobile .mod-left-split-toggle, .CG-MObsidian-sbt.is-mobile .mod-left-split-toggle, .modal-close-button):active, .markdown-rendered button.copy-code-button:active, .mod-windows .titlebar-button:not(.mod-logo):active, .status-bar-item.mod-clickable:active, .clickable-icon.nav-action-button:active, .search-result-hover-button:active, .pdf-sidebar-container .thumbnail:active, :not(.is-mobile) .empty-state-action:active, .metadata-property-icon:active, .sidebar-toggle-button.mod-right .clickable-icon:active, .status-bar-item.plugin-obsidian-languagetool-plugin:active, .canvas-control-item:active,  .canvas-card-menu .canvas-card-menu-button.mod-draggable:active, .is-mobile .workspace-drawer-tab-option-item:active, .is-mobile .workspace-drawer-header-switcher:active, .is-mobile .workspace-drawer-header-icon:active, .workspace-drawer-header-icon:active, .workspace-drawer-active-tab-icon:active, .workspace-drawer-active-tab-back-icon:active, 
+.workspace-drawer-active-tab-title:active, .is-phone .modal-setting-back-button:active, .table-col-btn:active, .bases-td.mod-implicit:active, .markdown-embed-link:active, .file-embed-link:active    {
     animation: 0.3s bigpressed forwards;
     background-color: var(--hover-bg2);
-    box-shadow: inset 0em 0em 1em var(--hover-color);
+    box-shadow: inset 0em 0em 1.5em var(--hover-color);
     color: var(--text-on-accent);
     border-radius: var(--radius-s);
     transition: background-color 0.2s, box-shadow 0.2s, animation 0.2s, border 1s !important;
@@ -1353,7 +1346,7 @@ body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover{
 }
 
 /*Button and Dropdown Styling*/
-button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered button.copy-code-button, .excalidraw .color-picker__button, button.context-menu-item, .excalidraw .help-icon, .excalidraw .dropdown-menu-button, .excalidraw .ToolIcon_type_button--show, button.mod-warning), .dropdown, .search-results-info .dropdown, .style-settings-export, .style-settings-import, .metadata-container .metadata-add-button, .excalidraw .buttonList label, .is-mobile .workspace-drawer-active-tab-header, .empty-state-action:not(.mod-close), .mk-main-menu-button:hover, .base-toolbar-sort-item .combobox-button, .bases-query-container .filter-row .combobox-button, .input-row-content .combobox-button, .bases-query-container .filter-group .filter-group-header .conjunction.dropdown{ 
+button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered button.copy-code-button, .excalidraw .color-picker__button, button.context-menu-item, .excalidraw .help-icon, .excalidraw .dropdown-menu-button, .excalidraw .ToolIcon_type_button--show, button.mod-warning), .dropdown, .search-results-info .dropdown, .style-settings-export, .style-settings-import, .metadata-container .metadata-add-button, .is-mobile .workspace-drawer-active-tab-header, .empty-state-action:not(.mod-close), .mk-main-menu-button:hover, .base-toolbar-sort-item .combobox-button, .bases-query-container .filter-row .combobox-button, .input-row-content .combobox-button, .bases-query-container .filter-group .filter-group-header .conjunction.dropdown, .is-mobile .workspace-drawer-tab-select .workspace-tab-header-inner{ 
     background-color: var(--color-accent-active);
     box-shadow: inset 0em 0em 2em var(--text-accent);
     border-radius: var(--radius-s);
@@ -1374,7 +1367,7 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
 }
 
 /*Button and Dropdown hover Styling*/
-button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered button.copy-code-button, .excalidraw .color-picker__button, button.context-menu-item,  .excalidraw .help-icon, .excalidraw .dropdown-menu-button, .excalidraw .ToolIcon_type_button--show, button.mod-warning):hover, .dropdown:hover, .style-settings-export:hover, .style-settings-import:hover, .metadata-container .metadata-add-button:hover, .excalidraw .buttonList label:hover, .base-toolbar-sort-item .combobox-button:hover, .bases-query-container .filter-row .combobox-button:hover, .input-row-content .combobox-button:hover, .bases-query-container .filter-group .filter-group-header .conjunction.dropdown:hover {
+button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered button.copy-code-button, .excalidraw .color-picker__button, button.context-menu-item,  .excalidraw .help-icon, .excalidraw .dropdown-menu-button, .excalidraw .ToolIcon_type_button--show, button.mod-warning):hover, .dropdown:hover, .style-settings-export:hover, .style-settings-import:hover, .metadata-container .metadata-add-button:hover, .base-toolbar-sort-item .combobox-button:hover, .bases-query-container .filter-row .combobox-button:hover, .input-row-content .combobox-button:hover, .bases-query-container .filter-group .filter-group-header .conjunction.dropdown:hover {
     animation: 0.2s bighover forwards;
     box-shadow: 0em 0em 0.15em 0.1em var(--text-accent) , inset 0em 0em 2em var(--text-accent);
     background-color: var(--text-selection);
@@ -1396,7 +1389,7 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
 }
 
 /*Button and Dropdown active Styling*/
-button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered button.copy-code-button, button.mod-warning):active, .dropdown:focus, .style-settings-export:active, .style-settings-import:active, .metadata-container .metadata-add-button:active, .is-mobile .workspace-drawer-active-tab-header:active, .is-mobile .empty-state-action:active, .markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn:active, .markdown-source-view.mod-cm6 .cm-table-widget .table-col-btn:active, .mk-main-menu-button:active, .base-toolbar-sort-item .combobox-button:active, .bases-query-container .filter-row .combobox-button:active, .input-row-content .combobox-button:active, .bases-query-container .filter-group .filter-group-header .conjunction.dropdown:active{
+button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered button.copy-code-button, button.mod-warning):active, .dropdown:focus, .style-settings-export:active, .style-settings-import:active, .metadata-container .metadata-add-button:active, .is-mobile .workspace-drawer-active-tab-header:active, .is-mobile .empty-state-action:active, .markdown-source-view.mod-cm6 .cm-table-widget .table-row-btn:active, .markdown-source-view.mod-cm6 .cm-table-widget .table-col-btn:active, .mk-main-menu-button:active, .base-toolbar-sort-item .combobox-button:active, .bases-query-container .filter-row .combobox-button:active, .input-row-content .combobox-button:active, .bases-query-container .filter-group .filter-group-header .conjunction.dropdown:active, .is-mobile .workspace-drawer-tab-select .workspace-tab-header-inner:active{
     animation: 0.3s bigpressed forwards;
     background-color: var(--text-selection);
     box-shadow: inset 0em 0em 2em var(--text-accent);
@@ -1479,7 +1472,7 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
 
 
 /*Close Button on active*/
-.modal-close-button:active, .document-search-close-button:active, a.kanban-plugin__search-cancel-button.clickable-icon:active, a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active, .multi-select-pill-remove-button:active, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:active, .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:active, .graph-controls:not(.is-close) .graph-controls-button.mod-close:active, button.mod-warning:active, .clickable-icon.document-search-close-button:active, .empty-state-action.tappable.mod-close:active, .mobile-tab .close-button:active, .empty-state-action.tappable.mod-close:active {
+.modal-close-button:active, .document-search-close-button:active, a.kanban-plugin__search-cancel-button.clickable-icon:active, a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active, .multi-select-pill-remove-button:active, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:active, .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:active, .graph-controls:not(.is-close) .graph-controls-button.mod-close:active, button.mod-warning:active, .clickable-icon.document-search-close-button:active, .empty-state-action.tappable.mod-close:active, .mobile-tab .close-button:active, .empty-state-action.tappable.mod-close:active, .is-phone .modal-close-button:active {
     color: var(--text-close-color);
     background-color: var(--background-close-active);
     box-shadow: inset 0em 0em 0.2em var(--text-close-color);
@@ -1521,7 +1514,7 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
     border-radius: 3px;
     display: inline !important;
     padding: 2px 6px;
-    background-color: transparent;
+    background-color: var(--custom-acc-bg);
     box-shadow: inset 0em 0em 12.5px var(--text-accent);
     color:  var(--text-on-accent);
     user-select: none;          
@@ -1538,9 +1531,10 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
     box-shadow: 0em 0em 0.8px 1.2px var(--text-accent) , inset 0em 0em 15px var(--text-accent);
     transition: background-color 0.2s, box-shadow 0.2s;
     animation: 0.3s bighover forwards;
+        background-color: var(--custom-acc-bg);
 }
 .markdown-rendered button.copy-code-button:active, .markdown-source-view.mod-cm6 .code-block-flair:active{
-    background-color: var(--text-selection);
+    background-color: var(--custom-acc-bg);
     box-shadow: inset 0em 0px 10px var(--text-accent);
     animation: 0.3s bigpressed forwards;
     transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
@@ -1709,6 +1703,10 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
     box-shadow: none;
 }
 
+.bases-table-container.mod-multiline .bases-table-cell{
+    background-color: var(--background-settings-2);
+}
+
 .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper {
     margin-inline: auto;}
 
@@ -1741,21 +1739,26 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
         box-shadow: inset 0em 0em 3em var(--hover-color);
     }
 
+    .workspace-tab-container{
+        border-radius: 5px 5px 0 0;
+    }
+
 /* #endregion*/
 
 /* #region -------- Scrollbar -------- */
-body:not(.native-scrollbars) ::scrollbar-thumb{
-    box-shadow: inset 0em 0em 0.55em var(--text-accent);
-}
 /*Scrollbar Hover*/
-body:not(.native-scrollbars) ::scrollbar-thumb:hover {
-    background: var(--text-selection);
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover {
     background-clip: padding-box;
 }
 /*Scrollbar Active*/
-body:not(.native-scrollbars) ::scrollbar-thumb:active {
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
     box-shadow: inset 0em 0em 0.5em var(--text-accent);
     background-clip: padding-box;
+}
+
+/*Restores Scrollbar to the pop up menu on phone*/
+.is-phone .menu-scroll::-webkit-scrollbar{
+ display: block !important;
 }
 /* #endregion*/
 
@@ -1765,13 +1768,27 @@ body:not(.native-scrollbars) ::scrollbar-thumb:active {
     display: none;
 }
 /*Adds Styling to Menu Dropdown*/
-.menu, .excalidraw .context-menu, .excalidraw .Island, .suggestion-container.mod-search-suggestion, .suggestion, .kanban-plugin__lane-form-wrapper, .menu.highlighterContainer, .mk-menu{
+.menu, .suggestion-container.mod-search-suggestion, .suggestion, .kanban-plugin__lane-form-wrapper, .menu.highlighterContainer, .mk-menu, .is-phone .workspace-drawer-tab-options-list{
     background: var(--background-settings);
     backdrop-filter: blur(5px) saturate(120%) !important;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
     border-top: 1px solid;
     border-bottom: 1px solid;
+}
+
+
+/*Popout Window*/
+.popover.hover-popover.is-editing,
+.popover.hover-popover {
+    outline: none;
+    background: var(--background-settings);
+    backdrop-filter: blur(5px) saturate(120%) !important;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+
 }
 
 /*Make.md incorrectly uses margin, should be using padding*/
@@ -1789,14 +1806,26 @@ body:not(.is-phone) .mk-menu-suggestions{
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
-/*Colors Menu Text on hover*/
-.menu-item:not(.is-warning):hover, .menu-item-icon:hover, .menu-item.selected:not(.is-label):not(.is-disabled):not(.is-warning), body:not(.is-grabbing) .tree-item-self.is-clickable:hover, .suggestion-item.is-selected:not(.mod-group, .bases-toolbar-menu-item):hover, .graph-control-section .tree-item-self:hover, .workspace-tab-header:hover, body:not(.is-phone) .vertical-tab-nav-item:not(:active):hover, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header:hover, .suggestion-item.is-selected:not(.mod-group, .bases-toolbar-menu-item), .mk-menu-option:not(.mk-disabled):hover, body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover, .mk-blink-suggestion:hover, .setting-item.setting-item-heading.style-settings-heading.is-collapsed:hover, .workspace-leaf-content .view-content .setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed):hover, .CG-FileTreeShade2 .tree-item-inner:hover, .bases-toolbar-menu-item .bases-toolbar-menu-item-info:hover, .text-icon-button:hover, .bases-toolbar-menu-container-header .back-button:hover, .is-phone .menu-item:not(.is-label):hover, .query-toolbar-menu .query-toolbar-section-header:hover, .bases-cards-item:hover{
-    background-color: var(--hover-bg2);
-    box-shadow: inset 0em 0em 1em var(--hover-color);
+/*Colors Menu Text on active*/
+.menu-item:not(.is-warning):active, .menu-item-icon:active, body:not(.is-grabbing) .tree-item-self.is-clickable:hover:active, .suggestion-item.is-selected:not(.mod-group, .bases-toolbar-menu-item):active, .graph-control-section .tree-item-self:active, .workspace-tabs .workspace-tab-header.tappable:active, body:not(.is-phone) .vertical-tab-nav-item:not(:active):active, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header:active, .suggestion-item.is-selected:not(.mod-group, .bases-toolbar-menu-item), .mk-menu-option:not(.mk-disabled):active, body:not(.is-grabbing) .nav-file-title:active, body:not(.is-grabbing) .nav-folder-title:hover:active, .mk-blink-suggestion:active, .setting-item.setting-item-heading.style-settings-heading.is-collapsed:active, .workspace-leaf-content .view-content .setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed):active, .bases-toolbar-menu-item .bases-toolbar-menu-item-info:active, .text-icon-button:active, .bases-toolbar-menu-container-header .back-button:active, .is-phone .menu-item:not(.is-label, .is-warning):active, .query-toolbar-menu .query-toolbar-section-header:active, .bases-cards-item:active, .vertical-tab-nav-item.tappable:active{
+    color: var(--text-on-accent);
+    animation: 0.3s bigpressed forwards;
+    background-color: var(--hover-bg3);
     border-radius: var(--radius-s);
-    transition:  animation 0.1s, color 0.1s;
-    border-radius: 5px;
+    box-shadow: inset 0em 0em 2em var(--hover-color);
+    transition: background-color 0.1s, box-shadow 0.1s, animation 0.1s, border 0.5s !important;
+}
+
+/*Colors Menu Text on hover*/
+.menu-item:not(.is-warning):hover, .menu-item-icon:hover, .menu-item.selected:not(.is-label):not(.is-disabled):not(.is-warning), body:not(.is-grabbing) .tree-item-self.is-clickable:hover, .suggestion-item.is-selected:not(.mod-group, .bases-toolbar-menu-item):hover, .graph-control-section .tree-item-self:hover, .workspace-tabs .workspace-tab-header.tappable:hover, body:not(.is-phone) .vertical-tab-nav-item:not(:active):hover, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header:hover, .suggestion-item.is-selected:not(.mod-group, .bases-toolbar-menu-item), .mk-menu-option:not(.mk-disabled):hover, body:not(.is-grabbing) .nav-file-title:hover, body:not(.is-grabbing) .nav-folder-title:hover, .mk-blink-suggestion:hover, .setting-item.setting-item-heading.style-settings-heading.is-collapsed:hover, .workspace-leaf-content .view-content .setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed):hover, .bases-toolbar-menu-item .bases-toolbar-menu-item-info:hover, .text-icon-button:hover, .bases-toolbar-menu-container-header .back-button:hover, .is-phone .menu-item:not(.is-label, .is-warning):hover, .query-toolbar-menu .query-toolbar-section-header:hover, .bases-cards-item:hover, .workspace-drawer-vault-switcher:hover, .workspace-drawer-vault-switcher.has-active-menu{
+    background-color: var(--hover-bg2);
+    box-shadow: inset 0em 0em 1.5em var(--hover-color);
+    border-radius: var(--radius-s);
     color: var(--custom-hovercolor);
+}
+
+.horizontal-tab-nav-item:hover .vertical-tab-nav-item-icon, .vertical-tab-nav-item:hover .vertical-tab-nav-item-icon, .horizontal-tab-nav-item.is-active .vertical-tab-nav-item-icon, .vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon, .vertical-tab-nav-item:active .vertical-tab-nav-item-icon{
+    color: var(--text-on-accent);
 }
 
 /*Fixes Highlight Issue for Icons in Menu*/
@@ -1804,7 +1833,6 @@ body:not(.is-phone) .mk-menu-suggestions{
     border: none;
     background: transparent;
     color: var(--text-on-accent);
-    transition: color 0.3s;
 }
 
 .CG-disableAni .menu-item:not(.is-warning):active,
@@ -1824,16 +1852,8 @@ body:not(.is-phone) .mk-menu-suggestions{
 }
 
 
-/*Colors Menu Text on active*/
-.menu-item:not(.is-warning):active, .menu-item-icon:active, .menu-item.selected:not(.is-warning):not(.is-label):not(.is-disabled):active, :not(.is-grabbing) .tree-item-self.is-clickable:active, .suggestion-item.is-selected:not(.mod-group, .bases-toolbar-menu-item):active, .graph-control-section .tree-item-self:active, :not(.is-phone) .horizontal-tab-nav-item.is-active:active, :not(.is-phone) .vertical-tab-nav-item.is-active:active, :not(.is-phone) .horizontal-tab-nav-item.is-active:hover, :not(.is-phone) .vertical-tab-nav-item.is-active:hover, :not(.is-phone) .vertical-tab-nav-item:active, .workspace-tab-header:active, .suggestion-item.mod-complex:not(.mod-group):active,  .mk-menu-option:not(.mk-disabled):active, body:not(.is-grabbing) .nav-file-title:active, body:not(.is-grabbing) .nav-folder-title:active, .mk-blink-suggestion:active, .setting-item.setting-item-heading.style-settings-heading.is-collapsed:active, .workspace-leaf-content .view-content .setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed):active, .bases-toolbar-menu-item .bases-toolbar-menu-item-info:active, .text-icon-button:active, .bases-toolbar-menu-container-header .back-button:active, .is-phone .menu-item:not(.is-label):active, .query-toolbar-menu .query-toolbar-section-header:active, .bases-cards-item:active{
-    color: var(--text-on-accent);
-    animation: 0.3s bigpressed forwards;
-    background-color: var(--hover-bg3);
-    box-shadow: inset 0em 0em 1.35em var(--hover-color);
-    transition: background-color 0.1s, box-shadow 0.1s, animation 0.1s, border 0.5s !important;
-}
 /*Displays Red for Permanent Deletion */
-.menu-item.is-warning,  .empty-state-action.tappable.mod-close {
+.menu-item.is-warning,  .empty-state-action.tappable.mod-close, .is-phone .menu-item.tappable.is-warning {
     background-color: var(--background-close);
     color: var(--text-close-color);
     margin-top: 5px;
@@ -1854,7 +1874,7 @@ button.clickable-icon[aria-label="Remove filter"] {
     color: var(--text-close-color);
 }
 /*Resolves Styling on Warning Hover*/
-.menu-item.is-warning:hover, .menu-item.is-warning.selected, .menu-item:hover.is-warning:not(.is-disabled):not(.is-label), .menu-item.selected.is-warning:not(.is-disabled):not(.is-label), button.mod-warning, .is-mobile button.mod-warning, button.clickable-icon[aria-label="Remove filter"]:hover{
+.menu-item.is-warning:hover, .menu-item.is-warning.selected, .menu-item:hover.is-warning:not(.is-disabled):not(.is-label), .menu-item.selected.is-warning:not(.is-disabled):not(.is-label), button.mod-warning, .is-mobile button.mod-warning, button.clickable-icon[aria-label="Remove filter"]:hover, .is-phone .menu-item.tappable.is-warning:active{
     color: var(--text-close-color);
     background: var(--background-close-hover);
     border-image-slice: 1;
@@ -1880,7 +1900,7 @@ button.clickable-icon[aria-label="Remove filter"] {
     body:not(.CG-Fullstatus-off)  .status-bar {
         position: sticky;
         border-radius: 0px;
-        background: var(--background-secondary);
+        background: transparent;
     }
     .status-bar{
         border-image-slice: 1;
@@ -1892,8 +1912,8 @@ button.clickable-icon[aria-label="Remove filter"] {
 
 /*#region -------- Titlebar Tabs -------- */
 /*Remove Curved Connectors for Classic Tabs*/
-.workspace-split.mod-root .workspace-tab-header.is-active::before, .workspace-split.mod-root .workspace-tab-header.is-active::after, .workspace-tab-header.is-active {
-    box-shadow: none;
+.workspace-tab-header-container .workspace-tab-header::before, .workspace-tab-header-container .workspace-tab-header::after{
+display: none;
 }
 /*Tab Spacing Between Each Other*/
 .mod-root .workspace-tab-header-container-inner {
@@ -1901,16 +1921,15 @@ button.clickable-icon[aria-label="Remove filter"] {
     gap: 4px;
 }
 /*Centers Tab Text*/
-.workspace .mod-root .workspace-tab-header-inner-title {
+.workspace .mod-root .workspace-tab-header-inner-title{
     text-align: center;
-    color: var(--text-muted);
+    color: var(--text-normal);
 }
 
 .workspace .mod-root .workspace-tab-header:hover .workspace-tab-header-inner-title, 
 .workspace .mod-root .workspace-tab-header:hover .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon{
- color: var(--nav-item-color-hover);
+ color: var(--text-on-accent);
 }
-
 
 /*Resolves jumping tab bug*/
 .workspace .mod-root .workspace-tab-header:not(.is-active, :hover) .workspace-tab-header-inner-close-button{
@@ -1919,7 +1938,7 @@ button.clickable-icon[aria-label="Remove filter"] {
 .workspace .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
     display: flex;
 }
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title, .text-icon-button.is-active:hover{
+body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon, body.is-focused .mod-active .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-title, .mod-left-split .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon, .mod-right-split .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon{
 color: var(--text-on-accent);
 }
 
@@ -1932,7 +1951,7 @@ color: var(--text-on-accent);
     background: var(--activetab-bg);
 }
 
-.workspace-tab-header.is-active.mod-active .workspace-tab-header-inner .workspace-tab-header-inner-icon{
+.workspace-tab-header.is-active.mod-active .workspace-tab-header-inner .workspace-tab-header-inner-icon, .workspace-tab-header:hover .workspace-tab-header-inner-close-button{
     color: var(--text-on-accent);
 }
 
@@ -1940,10 +1959,15 @@ color: var(--text-on-accent);
     animation: none;
 }
 
-.workspace-tab-header.is-active.mod-active, .workspace-tab-header.tappable.is-active:hover, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active, .text-icon-button.is-active:hover  {
+.workspace-tab-header.tappable.is-active:hover, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active, .text-icon-button.is-active:hover {
     background: var(--activetab-bg);
     transition: box-shadow 0.3s, background-color 0.3s, animation 0.3s, color 0.3s !important;
-    box-shadow: inset 0em 0em 1.75em var(--activetab-accent);
+    box-shadow: inset 0em 0em 1.3em var(--activetab-accent);
+}
+.workspace-tab-header.is-active.mod-active, .workspace-tab-header.tappable.is-active.mod-active, body:not(.CG-active-header) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active {
+    background: var(--activetab-bg);
+    transition: box-shadow 0.3s, background-color 0.3s, animation 0.3s, color 0.3s !important;
+    box-shadow: inset 0em 0em 2em var(--activetab-accent);
 }
 
 /*Active Tab Growth Ani*/
@@ -1960,7 +1984,7 @@ color: var(--text-on-accent);
     margin-top: 5px;
 }
 
-.workspace-split{
+.workspace-split, .workspace-tab-header-container .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner{
     background-color: transparent;
 }
 /*Removes Old Note Tab Hover*/
@@ -1972,7 +1996,6 @@ color: var(--text-on-accent);
 .mod-root .workspace-tab-header-status-icon{
     color: var(--text-muted);
 }
-
 /*------------------- Title bar: Tabs Stacked --------------*/
 /*Stacked Tabs text Readable*/
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-title {
@@ -2584,22 +2607,22 @@ background:var(--text-selection);
 }
 
 /*Note Animation*/
-.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .view-content{
+.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) .workspace-leaf-content:not([data-type="canvas"], [data-type="excalidraw"], [data-type="webviewer"]) .view-content:not(.canvas-wrapper.node-insert-event){
     animation: 0.25s slide-down forwards;
 }
 
-:not(.is-phone) .modal.mod-settings {
+body:not(.is-phone) .modal.mod-settings {
     animation: 0.25s scrollOpen forwards;
     border-radius: 0 0 5px 5px;
 }
-:not(.is-phone) .modal{
+body:not(.is-phone) .modal{
     animation: 0.25s scrollOpen forwards;}
 /*left pane Animation*/
-:not(.is-mobile) .workspace-split.mod-left-split .workspace-leaf-content, body:not(.is-mobile)  .workspace-leaf-content:not(:has(.view-content)) {
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-leaf-content, body:not(.is-mobile)  .workspace-leaf-content:not(:has(.view-content)) {
     animation: 0.15s slide-left forwards;
 }
 /*right pane Animation*/
-:not(.is-mobile) .workspace-split.mod-right-split .workspace-leaf-content {
+body:not(.is-mobile) .workspace-split.mod-right-split .workspace-leaf-content {
     animation: 0.15s slide-right forwards;
 }
 
@@ -2613,10 +2636,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     border-radius: 0 0 5px 5px;
     border-top: transparent solid 0px;
 }
-/*Background without custom background*/
-.workspace {
-    background-color: var(--background-secondary);
-}
+
 /*Colors the fade in header title*/
 .view-header-title-container:not(.mod-at-end):after {
     display: none;
@@ -2713,7 +2733,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split {
     margin-right: 5px;
 }
 /*Main Pane View Content Style*/
-.workspace-leaf-content .view-content, .is-mobile .workspace-drawer-tab-container {
+.workspace-leaf-content .view-content{
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
     border-bottom: 2px solid;
@@ -2733,16 +2753,27 @@ body:not(.is-mobile) .workspace-split.mod-left-split {
 }
 
 /*Highlight active page*/
-body:not(.CG-active-background) .workspace-leaf.mod-active:not(:has(table.table-editor)) .node-insert-event:not(.markdown-embed-content, .markdown-preview-view, .is-live-preview, .bases-table-container, .bases-cards-container), body:not(.CG-active-background) .workspace-leaf.mod-active iframe, body:not(.CG-active-background) .workspace-leaf.mod-active .surfing_app_zUmbJa, body:not(.CG-active-background) .workspace-split.mod-right-split .workspace-tabs .workspace-leaf.mod-active .node-insert-event, body:not(.CG-active-background) .workspace-split.mod-root .workspace-leaf.mod-active .view-content, body:not(.CG-active-background) .workspace-split.mod-horizontal .workspace-leaf.mod-active .workspace-leaf-content[data-type="style-settings"], body:not(.CG-active-background) .workspace-leaf.mod-active .mk-path-tree {
+body:not(.CG-active-background) .workspace-leaf.mod-active:not(:has(table.table-editor)) .node-insert-event:not(.backlink-pane, .markdown-embed-content, .markdown-preview-view, .is-live-preview, .bases-table-container, .bases-cards-container, .embedded-backlinks), body:not(.CG-active-background) .workspace-leaf.mod-active iframe, body:not(.CG-active-background) .workspace-split.mod-right-split .workspace-tabs .workspace-leaf.mod-active .node-insert-event, body:not(.CG-active-background) .workspace-split.mod-root .workspace-leaf.mod-active .view-content, body:not(.CG-active-background) .workspace-split.mod-horizontal .workspace-leaf.mod-active .workspace-leaf-content[data-type="style-settings"] .view-content, body:not(.CG-active-background) .workspace-leaf.mod-active .mk-path-tree {
     box-shadow: inset 0em 0em 1.25em hsl(var(--custom-windhighlight-accent));
     background-color: var(--customewindowhighlightaccent);
     transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+
+.workspace-leaf-content{
+    background-color: var(--background-primary);
+}
+
+.workspace-split.mod-root .view-content{
+    background-color: transparent;
 }
 
 .sidebar-toggle-button.mod-right .clickable-icon{
         transform: none;
         rotate: 180deg;
 }
+
+
 /*#endregion*/
 
 /*#region --------  Note Editor -------- */
@@ -2903,7 +2934,7 @@ body:not(.no-codeblock-line-numbers) .cm-s-obsidian div.HyperMD-codeblock-end-bg
     border-bottom: 2px solid;
 }
 /*Sets reset for code gutter*/
-body:not(.no-codeblock-line-numbers) .HyperMD-codeblock-begin {
+body:not(.no-codeblock-line-numbers) .HyperMD-codeblock-begin, body:not(.no-codeblock-line-numbers) .HyperMD-codeblock-end {
     counter-reset: codeblock-line-numbers;
 }
 /*Sets custom code gutterline*/
@@ -2932,7 +2963,6 @@ body:not(.no-codeblock-line-numbers) .HyperMD-codeblock:not(.HyperMD-codeblock-b
   0% 30px
 );
 }
-
 
 body:not(.line-active-disable) .markdown-source-view .cm-scroller .cm-line.cm-active.HyperMD-codeblock:not(.HyperMD-codeblock-begin, .HyperMD-codeblock-end)::before {
     content: counter(codeblock-line-numbers)!important;
@@ -3070,20 +3100,25 @@ body:not(.is-mobile) .empty-state-action {
 
 /*#region -------- Progress bar -------- */
 .progress-bar-indicator {
-    width: 22vw;
+    width: 30%;
     border-radius: var(--radius-l);
 }
 .progress-bar-line{
-    background-color: var(--background-settings);
+    background-color: black;
 }
 
 .progress-bar-subline.mod-increase {
-    animation: none;}
+    animation: none;
+}
 
+.progress-bar-subline.mod-decrease {
+    background-color: var(--color-accent-active);
+    box-shadow: inset 0em 0em 0.55em var(--text-accent);
+
+}
 .progress-bar-subline{
     border-radius: 3px;
-    background-color: var(--color-accent-active);
-    box-shadow: inset 0em 0em 0.35em var(--text-accent);
+    background-color: var(--background-settings);
 }
 /*#endregion*/
 
@@ -3108,6 +3143,9 @@ body:not(.CG-strike) .cm-strikethrough, del, ul > li.task-list-item[data-task="x
 /*Styles Underline*/
 span.cm-html-embed, u {
     text-shadow: 0 0 5px var(--text-accent), 0 0 10px var(--text-accent), 0 0 20px var(--text-accent), 0 0 40px var(--text-accent);
+}
+a.cm-underline{
+    color: var(--text-normal);
 }
 /*cite*/
 .markdown-rendered cite {
@@ -3264,16 +3302,6 @@ border-image: linear-gradient(to left, transparent, var(--text-accent) 45%,  var
 .multi-select-input:empty:before{
     padding: 10px;
 }
-/*Styles textbox and remove scrollbar from longtextbox*/
-.metadata-input-longtext, .metadata-input-text{
-    height: var(--metadata-input-height);
-    box-pack: center;
-    box-orient: horizontal;
-}
-.metadata-input-longtext::scrollbar{
-    display: none;
-}
-
 /*Metadata Calendar*/
 .metadata-property ::calendar-picker-indicator{
     padding:3px;
@@ -3323,7 +3351,7 @@ textarea:active, textarea:focus, input[type='text']:active, input[type='search']
     text-shadow:
     0 0 var(--CG-Header1-slider1) var(--h1-glow), 0 0 var(--CG-Header1-slider2) var(--h1-glow),
     0 0 var(--CG-Header1-slider3) var(--h1-glow), 0 0 var(--CG-Header1-slider4) var(--h1-glow), 0 0 var(--CG-Header1-slider5) var(--h1-glow);
-    color: var(--text-normal);
+    color: var(--text-on-accent);
 }
 
 /*Headers Styling Preview/Source*/
@@ -3496,6 +3524,18 @@ textarea:active, textarea:focus, input[type='text']:active, input[type='search']
 .tooltip .tooltip-arrow {
     display: none;
 }
+
+.is-loading:not(.vertical-tab-content, .community-modal-details):before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    opacity: 35%;
+    background: linear-gradient(to right, transparent, var(--text-accent));
+    animation: 3000ms ease-in-out 100ms infinite progress-bar;
+    border-radius: 5px;
+}
 /* #endregion*/
 
 /*#region -------- Prompt -------- */
@@ -3504,7 +3544,7 @@ textarea:active, textarea:focus, input[type='text']:active, input[type='search']
     background: var(--background-settings);
     backdrop-filter: blur(5px) saturate(120%) !important;
     border-image-slice: 1;
-    border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
+    border-image-source: linear-gradient(to top, transparent, var(--text-accent));
     border-right: 2px solid;
     border-left: 2px solid;
 }
@@ -3578,9 +3618,56 @@ input.prompt-input, .theme-dark.is-mobile .prompt input.prompt-input, .is-phone 
 
 /*#region -------- Links Styling -------- */
 /*Colors Internal Link text*/
-a.cm-underline {
-    color: var(--internal-link-hover);
+
+.cm-s-obsidian span.cm-hmd-internal-link, .markdown-rendered .internal-link{
+    color: var(--text-normal);
+    background: var(--internal-link-hover);
+    padding:0 2px 0 2px;
+    border-radius: 5px;
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, var(--background-primary) 0%) !important;
+    box-shadow: inset 0em 0em 1.5em var(--internal-link-hover), 0em 0em 0.5em var(--internal-link-hover);
+
 }
+
+
+.cm-s-obsidian span.cm-hmd-internal-link::after, .markdown-rendered .internal-link::after{
+    content: "";
+    background-size: 1em;
+    padding-inline-end: 1em;
+    background-color: var(--text-normal);
+    mask-image: var(--newoutlined-logo);
+    background-position: center right;
+    mask-repeat: no-repeat;
+    mask-size: 115%;
+    margin-left:2px ;
+            mask-position: center;
+
+}
+
+
+
+.cm-s-obsidian span.cm-link, .external-link {
+    color: var(--text-normal);
+    background: var(--link-external-color);
+    padding:0 2px 0 2px;
+    border-radius: 5px;
+    background-image: linear-gradient(360deg, var(--link-external-color) 0%, var(--background-settings-alt) 0%) !important;
+    box-shadow: inset 0em 0em 1em var(--link-external-color), 0em 0.1em 0.35em var(--link-external-color);
+}
+
+.cm-s-obsidian span.cm-link::after, .external-link::after{
+    content: "";
+    background-size: 0.925em;
+    padding-inline-end: 1.1em;
+      mask-image:
+    linear-gradient(transparent, transparent),
+    url("public/images/6155340132a851f6089e.svg");
+        mask-position: center;
+    mask-repeat: no-repeat;
+     background: var(--text-normal);
+
+}
+
 
 /*Adds Hover Effect on Internal Links*/
 .cm-s-obsidian span.cm-hmd-internal-link:hover, .markdown-rendered .internal-link:hover {
@@ -3644,9 +3731,9 @@ a.tag:hover {
 /* -------- Style Setting's Workspace: Background Color -------- */
 .CG-workspace-background {
     --background-primary: rgba(var(--bg-primary),
-            var(--CG-workspace-background-workspace-slider, 0.45));
+            var(--CG-workspace-background-workspace-slider, 0.50));
     --background-secondary: rgba(var(--bg-secondary),
-            var(--CG-workspace-background-workspace-slider, 0.45));
+            var(--CG-workspace-background-workspace-slider, 0.50));
 }
 /* -------- Style Setting's Workspace: Background Images -------- */
 /*Applies the theme's Community Background*/
@@ -3667,8 +3754,12 @@ a.tag:hover {
     background-repeat: no-repeat;
 }
 
+body:not(.is-phone) .workspace{
+    background-color: transparent;
+}
+
 /*Applies background image customizations*/
-.CG-workspace-background .workspace, .CG-workspace-background .status-bar, body:not(.is-hidden-frameless).CG-workspace-background .titlebar-inner {
+.CG-workspace-background .app-container, body:not(.is-hidden-frameless).CG-workspace-background .titlebar-inner {
     background-color: var(--background-secondary);
     backdrop-filter: brightness(var(--CG-workspace-background-brightness, 1.15)) blur(var(--CG-workspace-background-blur, 15px)) saturate(var(--CG-workspace-background-saturation, 2)) contrast(var(--CG-workspace-background-contrast, 100%));
 }
@@ -4213,10 +4304,7 @@ body:not(.is-hidden-frameless) .sidebar-toggle-button {
 /*Sidebar Stylings and better sidebar width*/
 .workspace-ribbon.side-dock-ribbon {
     flex: 0 0 50px;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
-    border-left: 2px solid;
-    border-right: 2px solid;
+    border-right: none;
     margin-top: 45px;
 }
 /*Removed L-Side toggle seperator and background*/
@@ -4229,9 +4317,10 @@ body:not(.is-hidden-frameless) .sidebar-toggle-button {
     border-right: 1px solid transparent;
     border-left: 1px solid transparent;
 }
-.input-right-decorator.clickable-icon.is-active, .clickable-icon.is-active, .clickable-icon.has-active-menu, .tree-item:not(.graph-control-section) .tree-item-self .tree-item-icon:active{
+.nav-buttons-container .nav-action-button.is-active, .clickable-icon.has-active-menu, body:not(.modal-close-button).clickable-icon:active, .clickable-icon.is-active{
     background-color: var(--color-accent-active);
-    box-shadow: inset 0em 0em 0.3em var(--text-accent);
+    box-shadow: inset 0em 0em 0.35em var(--text-accent);
+    color: var(--text-on-accent)
 }
 
 .tree-item .tree-item-self .tree-item-icon{
@@ -4322,13 +4411,6 @@ body.is-tablet .CG-Custom-sbt.sidebar-toggle-button.mod-left>.clickable-icon,
     background-blend-mode: luminosity;
 }
 
-.workspace-drawer-vault-switcher:hover, .workspace-drawer-vault-switcher.has-active-menu{
-    background-color: var(--color-accent-active);
-    box-shadow: inset 0em 0em 0.7em var(--text-accent);
-    border-radius: var(--radius-s);
-    transition: box-shadow 0.3s, background-color 0.3s, color 0.3s !important;
-}
-
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher:active{
     background-color: var(--text-selection);
     box-shadow: inset 0em 0em 1em var(--text-accent);
@@ -4372,7 +4454,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-activ
     border-left: 2px solid;
 }
 /*Add Styles to Resize Handle*/
-.workspace-leaf-resize-handle:hover, .pdf-sidebar-resizer:hover, .surfing_root_3FoL3a, .drop-indicator.is-active {
+.workspace-leaf-resize-handle:hover, .pdf-sidebar-resizer:hover {
     background: var(--text-accent);
     box-shadow: 0 0 3px var(--text-accent), 0 0 10px var(--text-accent), 0 0 20px var(--text-accent), 0 0 35px var(--text-accent);
     border-radius: 10px;
@@ -4383,15 +4465,32 @@ body:not(.is-mobile) .workspace-split.mod-left-split, body:not(.is-mobile) .work
     padding-left: 1px;
 }
 /*Navigation Bottom Style*/
-.nav-header, body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+body:not(.is-phone)  .nav-header, body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
     border-bottom: 2px solid;
 }
 
+.mod-left-split .workspace-tab-header-container .workspace-tab-header.has-active-menu, .mod-right-split .workspace-tab-header-container .workspace-tab-header.has-active-menu, .mod-left-split .workspace-tab-header-container .workspace-tab-header.is-active, .mod-right-split .workspace-tab-header-container .workspace-tab-header.is-active, .workspace-tab-header-container .workspace-tab-header.is-active{
+    background-color: hsla(var(--activetab-color), 0.35) ;
+    box-shadow: none;
+}
+
+.workspace-tab-header.tappable.is-active .workspace-tab-header-inner-title, .workspace-tab-header.is-active .workspace-tab-header-inner-close-button
+{
+        color: var(--text-on-accent);
+}
+
 /*Sets correct background to r/l sidepanels*/
-.node-insert-event, iframe, .surfing_app_zUmbJa, .workspace-split.mod-right-split .workspace-tabs .node-insert-event, .mk-path-tree {
+body:not(.popover.hover-popover.is-editing).node-insert-event, .mk-path-tree {
     background-color: var(--background-primary);
+}
+
+body:not(.is-grabbing) .tree-item-self.is-clickable:hover .collapse-icon svg.svg-icon{
+    color: var(--text-on-accent)
+}
+img.thumbnailImage{
+    margin-top: 0px;
 }
 
 /* #region -------- SidePanel: Files -------- */
@@ -4415,12 +4514,7 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-conta
     margin: 0px;
     background: var(--background-tertiary);
 }
-/*Style Loading bar*/
-.search-result-container.is-loading:before {
-    border-radius: 10px;
-    box-shadow: 0 0 0.5em var(--text-accent);
-    height: 2px;
-}
+
 /*Styles Result File Dropdown matches*/
 .search-result-file-matches {
     background: var(--background-tertiary);
@@ -4476,18 +4570,14 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-conta
     padding-left: 22px;
 }
 
+/*Adds margin to prevent last most content from being hidden by floating nav bar*/
+.is-phone .mod-left .workspace-drawer-active-tab-content .workspace-leaf-content:not([data-type="search"]) .node-insert-event{
+    margin-bottom: 35px;
+}
+
 .nav-files-container .tree-item-self .tree-item-icon{
     margin-inline-start: calc(-1.25* var(--size-4-5));
     width: var(--size-4-4);
-}
-
-.CG-FileTreeShade1 .tree-item-self{
-    background: var(--background-settings-alt);
-    padding: 10px 10px 10px 5px;
-    margin-bottom: 5px;
-    clip-path: polygon(0% 0%, calc(100% - 17px) 0%, 100% 17px, 100% 100%, 17px 100%, 0% calc(100% - 17px));
-    z-index: 0;
-    padding-inline-start: 10px;
 }
 
 /*Opened Folder svg not Collapsed and sets style for folder icons*/
@@ -4644,7 +4734,7 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-conta
 }
 
 
-.nav-folder-title[data-count]::after, .tree-item-flair, .community-item .flair, body:not(.is-phone) .community-item.is-selected .flair, body:not(.is-phone) .community-item.is-selected:hover .flair, .setting-hotkey{
+.nav-folder-title[data-count]::after, .tree-item-flair, .tree-item-self:hover .tree-item-flair, .community-item .flair, body:not(.is-phone) .community-item.is-selected .flair, body:not(.is-phone) .community-item.is-selected:hover .flair, .setting-hotkey{
     padding: 0 var(--size-4-1);
     background-color: var(--text-selection);
     box-shadow: inset 0em 0em 0.7em var(--text-accent);
@@ -4652,6 +4742,10 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-conta
     border-radius: var(--radius-s);
     margin-right: -1px;
     align-self: center;
+}
+
+.tree-item-self:hover .tree-item-icon{
+        color:var(--text-on-accent);
 }
 /* #endregion*/
 /*#endregion*/
@@ -4662,20 +4756,42 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-conta
 /*#region ======= Settings ======= */
 /*Style Left Panel Settings Headings*/
 .vertical-tab-header-group-title {
-    color: var(--text-accent);
+    color: var(--text-normal);
     border-bottom: 2px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
     padding-bottom: 0px;
     margin-bottom: 5px;
-    place-content: center;
+    place-content: space-between;
+    text-align: center;
+    font-family: var(--title-heading);
+    text-shadow: 0 0 var(--CG-Header1-slider1) var(--h1-glow), 0 0 var(--CG-Header1-slider2) var(--h1-glow), 0 0 var(--CG-Header1-slider3) var(--h1-glow), 0 0 var(--CG-Header1-slider4) var(--h1-glow), 0 0 var(--CG-Header1-slider5) var(--h1-glow);
+    letter-spacing: 1px;
 }
+
+.setting-item.setting-item-heading .setting-item-name, .setting-item .setting-item-name{
+    font-family: var(--major-heading);
+    letter-spacing: 1px;
+    text-shadow: 0 0 var(--CG-Header-slider1) var(--h1-glow), 0 0 var(--CG-Header-slider1) var(--h1-glow);
+}
+
 /*Settings*/
 .vertical-tab-header-group .vertical-tab-header-group-title{
     display: flex;
     align-items: center;
     padding-left: 0px;
 }
+.setting-group .setting-items{
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+    padding-top: 0px;
+}
+
+.setting-group .setting-group-search{
+    background-color: transparent;
+}
+
 /*Options Icon*/
  .vertical-tab-header-group:nth-last-of-type(-n+3) .vertical-tab-header-group-title::before {
     content: " ";
@@ -4683,6 +4799,13 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-conta
     height: 16px;
     background-color: currentColor;
     margin-right: 4px;
+}
+ .vertical-tab-header-group:nth-last-of-type(-n+3) .vertical-tab-header-group-title::after {
+    content: "";
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    margin-right: 1px;
 }
 
 .vertical-tab-header-group:nth-last-of-type(3) .vertical-tab-header-group-title::before {
@@ -4731,16 +4854,59 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-conta
     background-color: transparent;
 }
 /*Colors Toggle*/
-.checkbox-container.is-enabled:after {
-    background: var(--color-glow);
+.modal .checkbox-container.is-enabled:after{
+    background: var(--text-on-accent);
+    opacity: 0.65;
     box-shadow: none;
 }
+.modal .checkbox-container.is-enabled:active:after, .modal .checkbox-container.is-enabled:active:after, .modal .checkbox-container:not(.is-enabled):active:after, .style-settings-container .checkbox-container.is-enabled:hover:after, .style-settings-container .checkbox-container:not(.is-enabled):hover:after {
+    width: calc(var(--toggle-thumb-width) + var(--toggle-border-width));
+    height: var(--toggle-thumb-height);
+    margin: var(--toggle-border-width) 0 0 0;
+}
+
+.style-settings-container .checkbox-container{
+    width: var(--toggle-width);
+    height: calc(var(--toggle-thumb-height) + var(--toggle-border-width)* 2);
+}
+.style-settings-container .checkbox-container.is-enabled:after{
+    background: var(--text-on-accent);
+    box-shadow: none;
+    opacity: 0.65;
+}
+.style-settings-container .checkbox-container.is-enabled:after,  .style-settings-container .checkbox-container:not(.is-enabled):after{
+    width: var(--toggle-thumb-width);
+    height: var(--toggle-thumb-height);
+    margin: var(--toggle-border-width) 0 0 0;
+}
+
+
 /*Style Slider*/
 input[type='range'],
 body:not(.is-mobile) input[type=range]:focus {
-    background-color: var(--text-accent);
+    background-color: var(--color-accent-faint);
     box-shadow: 0 0 0.5em var(--text-accent);
 }
+input[type=range]::-webkit-slider-thumb{
+    height: 100%;
+    width: 5%;
+    top:-75%;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0.5em var(--text-accent);
+}
+input[type=range]::-webkit-slider-thumb:hover{
+    transition: box-shadow 0.3s;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 1em var(--text-accent);
+}
+
+ body:not(.is-mobile) input[type=range]:focus::-webkit-slider-thumb{
+    transition: box-shadow 0.3s;
+    box-shadow: 0 0 1.5em var(--text-accent);
+ }
+
+
+
 
 /*#region -------- Settings: Community -------- */
 /*Removes seperator*/
@@ -4805,7 +4971,7 @@ body:not(.is-mobile) .community-item.is-selected, body:not(.is-phone) .community
     border-radius: 3px;
 }
 
-.community-modal-search-results-wrapper{
+body:not(.is-mobile) .community-modal-search-results-wrapper{
     margin-left: 5px;
     margin-right: 5px;
 
@@ -4840,9 +5006,13 @@ body:not(.is-phone) .modal.mod-settings .vertical-tab-header {
     border-right: transparent;
 }
 body:not(.is-phone) .vertical-tab-content-container{
-    background: var(--background-settings-2);
+border-top: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
     border-radius: 10px 0 0 0;
     margin-top: 35px;
+    background: var(--background-settings-3);
+    transition: box-shadow 0.3s, background-color 0.3s;
 }
 /*Styles Content of Setting*/
 .modal .setting-item:not(.setting-item-heading) {
@@ -4854,7 +5024,7 @@ body:not(.is-phone) .vertical-tab-content-container{
     clip-path: polygon(0% 0%, calc(100% - 17px) 0%, 100% 17px, 100% 100%, 17px 100%, 0% calc(100% - 17px));
 }
 /*Removes double background for settings*/
-.horizontal-tab-content, .vertical-tab-content, .vertical-tab-header, .modal-sidebar {
+.horizontal-tab-content, .vertical-tab-content, .is-mobile .modal.mod-settings .vertical-tab-content .vertical-tab-header, .modal-sidebar, .setting-group .setting-items, .is-mobile .modal.mod-settings .vertical-tab-content {
     background: transparent;
 }
 .CG-disableAni :not(.is-phone) .modal-bg{
@@ -4870,11 +5040,19 @@ body:not(.is-phone).CG-settings-background .modal-bg{
     background-color: transparent;
 }
 
-:not(.is-phone) .modal-bg {
+body:not(.is-phone) .modal-bg {
     box-shadow: inset 0em 0em 2.5em var(--text-accent);
     background-color: var(--color-accent-active);
     animation: appear 0.5s;
 }
+
+.setting-group .setting-item-heading{
+    margin-bottom: 0;
+}
+.setting-group + .setting-group{
+    margin-top: 10px;
+}
+
 /*#endregion*//*#endregion*/
 /*#endregion*/
 /*#endregion*/
@@ -4883,6 +5061,16 @@ body:not(.is-phone).CG-settings-background .modal-bg{
 /*Removes Style Setting Theme Playground*/
 .setting-item.setting-item-heading.style-settings-heading[data-id="theme-design-utilities"]{
 display: none;
+}
+
+.workspace-leaf-content .view-content .setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed) .style-settings-collapse-indicator, .setting-item.setting-item-heading.style-settings-heading:hover .style-settings-collapse-indicator, .setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed) .setting-item-name, .setting-item.setting-item-heading.style-settings-heading:hover .setting-item-name{
+
+color: var(--text-on-accent);
+}
+.workspace-leaf-content .view-content .setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed) .setting-item-description, .setting-item.setting-item-heading.style-settings-heading:hover .setting-item-description, .workspace-leaf-content .view-content .setting-item.setting-item-heading.style-settings-heading:not(.is-collapsed) .clickable-icon, .setting-item.setting-item-heading.style-settings-heading:hover .clickable-icon{
+    color: var(--text-on-accent);
+    opacity: 0.85;
+
 }
 
 /*Fits Style Options within box*/
@@ -4898,7 +5086,7 @@ display: none;
 
 /*Adds Style to Setting Item in Style Settings*/
 .workspace-leaf-content .view-content .setting-item, .setting-item.setting-item-heading.style-settings-heading {
-background: var(--background-settings-alt);
+background: var(--background-settings-3);
     border-radius: 5px;
     padding: 10px;
     border-bottom: 1px solid transparent;
@@ -4940,9 +5128,6 @@ gap: var(--size-4-1);
     border-radius: 5px;
     }
 
-    .style-settings-collapse-indicator, .collapse-icon svg.svg-icon{
-        color:var(--text-muted);
-    }
 /*#endregion*/
 
 /*#region ======= Canvas ======= */
@@ -5187,14 +5372,7 @@ button:not(.clickable-icon).lt-ignore-btn {
 }
 /*#endregion*/
 
-/*#region -------- Mermaid Tool --------*/
-.view-content.mermaid-toolbar-container{
-    background-color: var(--background-primary);
-}
-.workspace-leaf-content[data-type="surfing-tab-tree"]{
-    background-color: var(--background-primary);
-}
-/*#endregion*/
+
 
 /*#region ---- Editing Toolbar Plugin ----*/
 /*Styles the Toolbar*/
@@ -5275,21 +5453,71 @@ div.chat-view-align-right{
     visibility: hidden;
 }
 
-/*Sets Spacing of items on nav bar*/
-.mobile-navbar-actions {
-	justify-content: space-around;
+.is-phone .workspace > .mod-root, .is-phone .workspace-drawer-inner{
+    background-color: transparent;
+    backdrop-filter: blur(18px);
 }
+
+.is-phone .workspace-drawer-inner{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.is-phone .workspace-drawer .nav-header, .is-phone .outgoing-link-pane.node-insert-event{
+padding-top: max(var(--size-4-2), var(--safe-area-inset-top));
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+}
+
+.is-phone .workspace-drawer.mod-left .nav-header{
+        border-bottom: 2px solid;
+        background: var(--background-tertiary);
+}
+
+/*Button Radius*/
+.is-phone .clickable-icon{
+border-radius: var(--radius-m);
+}
+
 /*Fixes strange tiny next/prev buttons on finder for PDF*/
 .is-phone .pdf-findbar .pdf-toolbar-button{
     padding:3px;
 }
 /*Bottom Nav Styled*/
-.mobile-navbar-actions, .is-phone .workspace-drawer .nav-header {
+.mobile-navbar-actions {
 	border-bottom: 2px solid;
+    border-top: 2px solid;
 	border-image-slice: 1;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
     padding: 3px;
     background: var(--background-tertiary);
+    justify-content: space-around;
+}
+
+/*Remove the background on so-called "raised" elements which still is applied even if its disabled in settings*/
+.is-mobile.is-floating-nav :not(.mod-left-split-toggle, .modal-close-button).mod-raised, .mobile-toolbar-options-list-container.mod-raised {
+    background: transparent;
+    backdrop-filter: none;
+}
+
+/*Corrects backdrop blur on so-called "raised" navbar*/
+.is-floating-nav .mobile-navbar.mod-raised .mobile-navbar-actions{
+backdrop-filter: blur(18px);
+border-radius: 10px;
+}
+
+.mobile-navbar.mod-raised{
+max-width: var(--navbar-max-width);
+    place-self: center;
+}
+
+.is-phone .workspace-drawer-tab-container{
+    border-top: 2px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+}
+
+.is-phone  .workspace-drawer-header-left {
+    padding: 5px 0px 0px 5px;
 }
 /*Unique Menu Style*/
 .is-mobile .menu, .theme-dark.is-mobile .prompt, .is-mobile .prompt {
@@ -5301,6 +5529,10 @@ div.chat-view-align-right{
     border-bottom: 2px solid;
 }
 
+.is-phone .menu-group .menu-item:not(.is-label):after{
+    content: none;
+}
+
 /*Styles text search on mobile*/
 .is-mobile .workspace-leaf-content[data-type="markdown"] .document-search-container {
     background: var(--background-tertiary);
@@ -5308,8 +5540,13 @@ div.chat-view-align-right{
 /*Mobile Navigation Bar (bottom)*/
 .mobile-navbar {
 	backdrop-filter: blur(18px);
-	background: var(--background-tertiary);
-    padding: 0px 0px calc(var(--safe-area-inset-bottom) - var(--keyboard-height) - var(--keyboard-height)) 0px;
+	background: var(--background-tertiary); 
+    margin:0px;
+    padding:0px;
+    position: absolute;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
     
 }
 /*Mobile and Notice Style*/
@@ -5347,16 +5584,12 @@ animation: none;
     padding: 0px;
 }
 /*Edit Mode Toolbar*/
-.mobile-toolbar-options-container {
+.mobile-toolbar{
 	align-items: center;
 	z-index: 90;
 	backdrop-filter: blur(18px);
 	background: var(--background-settings);
 	background-attachment: fixed !important;
-	bottom: 0px;
-	border-image-slice: 1;
-	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
-	border-top: 2px solid;
 }
 
 .mobile-toolbar-options-container{
@@ -5382,9 +5615,12 @@ animation: none;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
     padding-left: 5px;
 }
-/*Hides unnecessary nav heder in embedded backlinks*/
+
+/*Returns embedded backlinks in notes*/
 .is-phone .embedded-backlinks .nav-header{
-    visibility:hidden ;
+top: 32%;
+    position: absolute;
+    left: 100%;
 }
 
 /*Export Page Style*/
@@ -5402,9 +5638,15 @@ animation: none;
     background-color: var(--text-normal);
     box-shadow:  inset 0em 0em 0.3em var(--hover-color), 0em 0em 0.5em var(--hover-color), 0em 0em 0.5em var(--hover-color);
 }
-/*Removes unnecessary scroller background*/
+
+.is-phone .menu-group .menu-item:first-child, .is-phone .menu-group .menu-item:last-child{
+border-radius: 0;
+}
+
+/*Removes unnecessary scroller background and displays all options for menu*/
 .is-phone .menu-scroll{
     background-color: transparent;
+    max-height: fit-content;
 }
 
 .is-phone .mod-confirmation .modal-header{
@@ -5445,33 +5687,141 @@ button.clickable-icon.view-action.mod-bookmark.mod-bookmarked.mod-filled.clickab
     height: 100%;
     background-color: var(--background-settings);
 }
+
+.is-phone .pull-down-action{
+        margin: 0 auto 0 auto;
+    padding: calc(var(--safe-area-inset-bottom) + var(--size-2-1)) 0 0;
+}
 /*#endregion*/
 
 /*#region ------- Mobile UI: Sidepanel -----*/
+/*Reduce the unnecessary height for the sidepanel*/
+.is-phone .workspace-tab-header-inner{
+    height: 60%;
+}
+
+.is-phone .workspace-drawer-backdrop{
+    background-color: transparent;
+}
+
+.is-phone .workspace-drawer-tab-options{
+        height: 0%;
+    padding-top: 5px;
+}
+
 /*On Phone side panels are full screen*/
 .is-phone .workspace-drawer.mod-left, .is-phone .workspace-drawer.mod-right {
-	border-radius: 0px;
 	min-width: -webkit-fill-available;
-    backdrop-filter: blur(16px);
+}
+
+/*Removes the unnecessary background colors for the sidepanels*/
+.is-phone .workspace-drawer.mod-left, .is-phone .workspace-drawer.mod-right{
+    background-color: transparent;
 }
 /*Change background for parameter, search row and search info*/
 .is-phone .search-params, .is-phone .search-row, .search-results-info {
     background: var(--background-tertiary);
 }
 
-/*Sidepanel Styling*/
+.is-phone .nav-buttons-container{
+    padding:2px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    background: var(--background-tertiary);
+}
+
+.is-phone .modal-bg{
+    background-color: transparent;
+}
+
+.is-phone .modal-close-button{
+color: var(--text-close-color);
+    background: var(--background-close-hover);
+    box-shadow: inset 0em 0em 0.35em var(--text-close-color);
+    border-radius: var(--radius-m);
+    height: var(--touch-size-xs);
+    width: var(--touch-size-xs);
+}
+
+.is-phone .modal.mod-settings.mod-sidebar-layout .modal-close-button{
+        top: calc(var(--safe-area-inset-top) + 10px);
+}
+
+.is-phone .modal .modal-setting-back-button{
+    border-radius: 5px;
+    height: var(--touch-size-xs);
+    width: var(--touch-size-xs);
+    top: calc(var(--safe-area-inset-top) + 10px);
+        border-radius: var(--radius-m);
+}
+
+.workspace-drawer .nav-buttons-container .nav-action-button{
+    width: 100%;
+    height: 30px;
+}
+
+.is-phone .view-header .view-action{
+    height: 70%;
+    width: var(--touch-size-xs);
+    border-radius: var(--radius-l);
+}
+
+.is-phone .view-header{
+position: inherit;
+}
+
+/*Removes the very distracting transitions on scroll for the top nav bar*/
+.is-phone.is-hidden-nav{
+--view-top-fade-mask: transparent;
+}
+
+.is-phone.is-hidden-nav .view-header{
+opacity: 1;
+transform: none;
+}
+
+ .is-phone.is-floating-nav, .is-phone.auto-full-screen{
+    --view-top-spacing-markdown: 0;
+    --view-top-fade-mask: 0;
+    --view-bottom-fade-mask: 0;
+ }
+
+/*Sidepanel Styling and merges the sidepanel selector with the vault selector bar*/
 .is-phone .workspace-drawer-header {
 	border-top: 2px solid;
 	border-bottom: 1px solid;
 	border-image-slice: 1;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 	background: var(--background-tertiary);
+    padding-top: 0;
+    padding-inline-end: var(--size-2-3);
+    padding-inline-start: var(--size-2-1);
+    flex-direction: row-reverse;
+    gap: 0px;
 }
-body:not(.is-tablet) .workspace-drawer-active-tab-container{
-    background: var(--background-tertiary);
-    padding-top: 10px;
+.is-phone .workspace-drawer-active-tab-container{
+    background: transparent;
 }
-body:not(.is-tablet) .workspace-drawer-active-tab-container .workspace-drawer-active-tab-content{
+
+
+.is-phone .workspace-drawer-tab-options{
+    margin:0;
+    width: 45%;
+    left: 220px;
+}
+
+.is-phone  .workspace-drawer.mod-left .workspace-drawer-tab-options .workspace-drawer-tab-select{
+    align-content: center;
+}
+
+.clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings{
+
+        width: var(--touch-size-m);
+    height: var(--touch-size-l);
+}
+body:not(.is-mobile) .workspace-drawer-active-tab-container .workspace-drawer-active-tab-content{
     margin-top: 5px;
     border-top: 2px solid;
 	border-image-slice: 1;
@@ -5494,14 +5844,19 @@ span.workspace-drawer-header-name-chevron, .clickable-icon.workspace-drawer-head
     color: var(--text-muted);
 }
 
-.nav-files-container.node-insert-event.show-unsupported
+/*No fade wanted*/
+.is-mobile.is-floating-nav .workspace-drawer .workspace-leaf-content:after, .is-mobile.is-floating-nav .workspace-drawer .nav-buttons-container:after{
+    content: none;
+}
 
+.is-mobile.is-floating-nav .workspace-drawer .nav-buttons-container{
+    background-color: var(--background-tertiary);
+}
 
 /*#endregion*/
 
 /*#region ------ Tab Switcher ------- */
 .mobile-tab-switcher{
-    background-color: var(--background-primary-alt) !important;
     backdrop-filter: blur(8px);
     border-top: 2px solid;
     border-bottom: 2px solid;
@@ -5530,6 +5885,10 @@ span.workspace-drawer-header-name-chevron, .clickable-icon.workspace-drawer-head
     /*Removes the shadowbox on active phone tab*/
     .mobile-tab.is-active .mobile-tab-preview-empty, .mobile-tab.is-active .mobile-tab-preview-embed{
         box-shadow: none;
+    }
+
+    .mobile-tab-switcher-scroll{
+        margin-bottom: 40px;
     }
 /*#endregion*/
 
@@ -5595,15 +5954,58 @@ margin:-1px -5px -1px -5px;
 	border-bottom: 2px solid;
 }
 
+.is-phone .modal.mod-settings .modal-header:after{
+    background-color: transparent;
+}
+
+/*Original settings view behavior*/
+.is-phone .modal.mod-settings .modal-content {
+    margin-top: calc(var(--modal-header-height));
+    padding: 0;
+}
+
+/*Rearrenging Settings Buttons*/
+.is-phone .modal.mod-sidebar-layout .modal-content .vertical-tab-header, .is-phone .setting-group .setting-items {
+    padding-top:0;
+}
+.is-phone .modal .setting-item:not(:is(.mod-toggle, .setting-item-heading)){
+flex-direction: row;
+}
+
+.is-phone .modal .setting-item:not(:is(.mod-toggle, .setting-item-heading)) .setting-item-control, .is-phone .modal .setting-item:not(:is(.mod-toggle, .setting-item-heading)){
+    align-self: center;
+}
+
+.is-phone .modal .setting-item{
+    gap: 0;
+}
+.is-phone .modal:not(.mod-community-modal)  .setting-item-control{
+    display: grid;
+}
+
+.is-phone input[type="color"] {
+    grid-column: none;
+}
+
 /*Colors settings nav item list on phone*/
-.is-phone .modal.mod-settings .vertical-tab-nav-item,
-.is-phone.theme-dark .modal.mod-settings .vertical-tab-nav-item {
-	background-color: var(--background-settings-alt);
+.is-phone .modal.mod-settings .vertical-tab-nav-item, .is-phone.theme-dark .modal.mod-settings .vertical-tab-nav-item {
+	background-color: var(--background-settings-2);
 	border-bottom: 1px solid transparent;
     color: var(--text-muted);
     margin: 5px;
     border-radius: var(--radius-s);
     clip-path: polygon(0% 0%, calc(100% - 17px) 0%, 100% 17px, 100% 100%, 17px 100%, 0% calc(100% - 17px));
+}
+
+
+/*Removes Unnecessary Bottom border for items*/
+.is-phone .modal.mod-settings .vertical-tab-nav-item-chevron, .is-phone .modal.mod-settings .vertical-tab-nav-item-title{
+border-bottom: none;
+}
+
+.is-phone .modal.mod-settings .vertical-tab-header-group-items {
+    background-color:transparent;
+    border-radius:0;
 }
 
 .is-phone .menu .suggestion-group .suggestion-item:not(.is-label), .is-phone .menu-item:not(.is-label){
@@ -5625,9 +6027,43 @@ margin:-1px -5px -1px -5px;
     padding-bottom: 0px;
     animation: slide-down 0.2s;
 }
-.is-phone .modal.mod-settings .vertical-tab-content{
-    background: var(--background-primary-alt);
+.is-phone .modal.mod-settings .vertical-tab-content, .is-phone .community-modal-search-results-wrapper{
+    background: var(--background-settings);
 }
+
+.is-phone .workspace-drawer-tab-container > *{
+    height: 101%;
+}
+
+/*Removes unnecessary spacing*/
+.is-phone .modal.mod-sidebar-layout .modal-content .vertical-tab-content{
+    padding-top: 0;
+}
+
+.is-phone .community-modal-controls{
+    margin-left: 0;
+    background-color: var(--background-tertiary);
+}
+
+.is-mobile .community-item{
+    border-radius: var(--radius-m);
+        background: var(--background-settings-2);
+}
+
+.is-mobile textarea, .is-mobile  .multi-select-container, .is-mobile  input.metadata-input-text, .is-mobile input[type='date'], .is-mobile input[type='datetime-local'], .is-mobile input[type='text'], .is-mobile input[type='search'], .is-mobile input[type='email'], .is-mobile input[type='password'], .is-mobile input[type='number']{
+    border-radius: var(--radius-m);
+}
+
+.is-phone .workspace-drawer-tab-options-list{
+    box-shadow: none;
+    border-radius: var(--radius-m);
+    padding-bottom: 0;
+}
+
+.is-phone .workspace-tab-header.is-active .workspace-tab-header-inner:active, .is-phone .workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.has-active-menu .workspace-tab-header-inner{
+    background: transparent;
+}
+
 /*#endregion*/
 /*#endregion*/
 
@@ -5663,6 +6099,17 @@ margin:-1px -5px -1px -5px;
     border-image-slice: 1;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 }
+
+
+.is-mobile .modal-close-button{
+top: var(--size-4-1);
+border-radius: var(--radius-m);
+}
+
+.clickable-icon{
+border-radius: var(--radius-m);
+}
+
 /*#region -----Tablet Sidebar Pinned ----- */
 .is-tablet .workspace-drawer.mod-left.is-pinned{
     background: transparent;
@@ -5678,7 +6125,7 @@ margin:-1px -5px -1px -5px;
     background: transparent;
 } 
 .workspace-drawer.mod-left.is-pinned{
-    border-right: 1px solid;
+    border-right: 1px solid red;
 }
 
 .is-tablet .workspace-drawer.is-pinned .workspace-drawer-active-tab-container .workspace-drawer-active-tab-content{
@@ -5688,20 +6135,20 @@ margin:-1px -5px -1px -5px;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 }
 .is-tablet .workspace-drawer.is-pinned  .workspace-drawer-active-tab-container{
-    background-color: transparent;
     padding-top: 10px;
+    border-radius: 5px 5px 0 0;
 }
 
 .is-tablet .workspace-drawer.is-pinned .workspace-drawer-header {
     padding-top: 5px;
-}
-
-.is-tablet .workspace-drawer.is-pinned  .workspace-drawer-header {
-	border-top: 2px solid;
+    border-top: 2px solid;
 	border-bottom: 1px solid;
 	border-image-slice: 1;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
+    background: var(--background-tertiary);
+    border-radius: 0 0 5px 5px;
 }
+
 .is-tablet .workspace-drawer.is-pinned .workspace-drawer.mod-right.is-pinned {
     border-left: 1px solid;
     background: transparent;
@@ -5720,6 +6167,37 @@ margin:-1px -5px -1px -5px;
 .is-tablet .workspace-drawer.mod-right.is-pinned .workspace-leaf-content[data-type="style-settings"]{
 background-color: var(--background-primary);
 }
+
+.is-tablet .workspace-drawer-inner {
+background-color: transparent;
+}
+
+.is-tablet .workspace-drawer-ribbon{
+    	border-image-slice: 1;
+	border-image-source: linear-gradient(to top, transparent, var(--text-accent), transparent);
+    border-right: 1px solid;
+}
+
+
+.is-tablet .workspace-drawer .nav-buttons-container{
+    background-color: var(--background-tertiary);
+}
+
+.is-tablet .workspace-drawer .nav-header{
+padding: 0;
+}
+
+/*Border-radius fix*/
+.is-tablet .tree-item-self{
+        border-radius: 5px;
+    }
+
+
+    /*Unpinned Sidepanel background fix*/
+.is-tablet .workspace-drawer.mod-left:not(.is-pinned) .side-dock-ribbon.mod-left.workspace-drawer-ribbon {
+    background: var(--background-tertiary);
+}
+
 /*#endregion*/
 /*#endregion*/
 
@@ -5756,21 +6234,6 @@ background-color: var(--background-primary);
 
 .tree-item.nav-folder:before {
     top: 16px;
-}
-
-
-.CG-FileTreeShade2 .tree-item-inner  {
-    background: var(--background-settings-alt);
-    padding: 10px 10px 10px 5px;
-    margin-bottom: 5px;
-    clip-path: polygon(0% 0%, calc(100% - 12px) 0%, 100% 12px, 100% 100%, 12px 100%, 0% calc(100% - 12px));
-    z-index: 0;
-    width: 100%;
-}
-
-.CG-FileTreeShade2 .tree-item-self.nav-file-title.tappable.is-clickable{
-    padding: 0px;
-    margin:0px;
 }
 
 /*Bases Layout Dropdown Appearing from behind Obsidian bug*/
@@ -5826,4 +6289,43 @@ border: none;
 }
 .bases-cards-item {
     box-shadow: none;
+}
+
+/*Footnotes*/
+section.footnotes::before{
+        content: 'Footnotes';
+        font-family: var(--title-heading);
+    text-align: center;
+    text-shadow: 0 0 var(--CG-Header1-slider1) var(--h1-glow), 0 0 var(--CG-Header1-slider2) var(--h1-glow), 0 0 var(--CG-Header1-slider3) var(--h1-glow), 0 0 var(--CG-Header1-slider4) var(--h1-glow), 0 0 var(--CG-Header1-slider5) var(--h1-glow);
+    color: var(--text-normal);
+        display: block;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: var(--h1-size);
+}
+section.footnotes, .embedded-backlinks{
+    background: var(--background-primary);
+    padding: 2px;
+    position: relative;
+        border-image-slice: 1;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(to right, transparent, var(--h1-glow), transparent);
+    border-bottom: 2px solid;
+    border-radius: var(--radius-m);
+    box-shadow: 0em 0em 0.5em var(--h1-glow);
+}
+section.footnotes p.footnote{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+body:not(.is-mobile) .embedded-backlinks .nav-header{
+    display: none;
+}
+
+.markdown-rendered mark{
+    margin: 0 -0.05em;
+    border-radius: var(--radius-s);
+    box-decoration-break: clone;
+    box-shadow: inset 0em 0em 1.5em var(--text-highlight-bg), 0em 0em 0.5em var(--text-highlight-bg);
 }
