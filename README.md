@@ -1,14 +1,8 @@
 # Cyber Glow for Obsidian
 ![CyberGlow Version](https://img.shields.io/github/v/tag/ThePharaohArt/Obsidian-CyberGlow?label=CyberGlow%20Version&style=flat-square&color=4CADD6) ![Last Updated](https://img.shields.io/github/last-commit/ThePharaohArt/Obsidian-CyberGlow?label=Last%20Updated&style=flat-square&color=4CADD6) ![Stars](https://img.shields.io/github/stars/ThePharaohArt/Obsidian-CyberGlow?label=Stars&style=flat-square&color=D6C84C) ![Open Issues](https://img.shields.io/github/issues/ThePharaohArt/Obsidian-CyberGlow?label=Open%20Issues&style=flat-square&color=D64C4C) ![Solved Issues](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ThePharaohArt/Obsidian-CyberGlow/main/solved-issues-badge.json&style=flat-square)
 
-> ## 2.3.7 **Changelog** 
-> - Added: Mini Headers now can be toggled in Reader view
-> - Added: Style Setting option to remove the Strikout Style for better readability
-> - Fixed: Collapsible Chevrons not appearing for headers in Live Preview
-> - Fixed: Incorrect Scifi Clipping on bases when hovering
-> - Fixed: Header when Header is empty
-> - Fixed: Bullet List alignment (might need to be altered further if there are issues)
-> - Modified: Reduced the intensity of the window highlighter
+> ## 2.7.0 **Changelog** 
+> - Huge Changelog, see the full changelog in the release section.
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
