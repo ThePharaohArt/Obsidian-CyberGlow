@@ -1,7 +1,10 @@
 # Cyber Glow for Obsidian
 ![CyberGlow Version](https://img.shields.io/github/v/tag/ThePharaohArt/Obsidian-CyberGlow?label=CyberGlow%20Version&style=flat-square&color=4CADD6) ![Last Updated](https://img.shields.io/github/last-commit/ThePharaohArt/Obsidian-CyberGlow?label=Last%20Updated&style=flat-square&color=4CADD6) ![Stars](https://img.shields.io/github/stars/ThePharaohArt/Obsidian-CyberGlow?label=Stars&style=flat-square&color=D6C84C) ![Open Issues](https://img.shields.io/github/issues/ThePharaohArt/Obsidian-CyberGlow?label=Open%20Issues&style=flat-square&color=D64C4C) ![Solved Issues](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ThePharaohArt/Obsidian-CyberGlow/main/solved-issues-badge.json&style=flat-square)
 
-> ## 2.7.0 **Changes** 
+> ## 2.7.0 **Changes**
+> <img width="392" height="103" alt="image" src="https://github.com/user-attachments/assets/765bae3c-dcfd-42fd-beec-34399835ab7b" /><br>
+> - Compact Sidepanel bar on mobile, the navbar no longer covers the last note in the sidepanel.
+> - Reworked Page selected page highlight.
 > - Huge amounts of changes, too many to list here, see the full changelog in the release section.
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
@@ -32,30 +35,32 @@ Would appreciate any donation if you enjoy this theme, doing this theme in my fr
 No additional plugins are required to have the theme working unlike many other themes.
 - Kanban
 - Style Settings (more customizations)
-- Surfing
 - File Exporer Note Count
 - Language Tool Integration 
-- and much more
+- and more
 - If a plugin doesn't look right with this theme let me know.<br>
 
-### What to Expect
+### What to Expect in Cyber Glow
 - Completely consistent and unique design style and in dark/light mode compared to majority of themes<br>
-  
-Some styles that first appeared in this CyberGlow:
+- Upright Stacked tabs titles for easier reading (no need to crane your neck)
+
+Styling that first appeared on CyberGlow:
 - Adopt theme wide Accent color support for majority of the theme 
 - Unique Line Separator featuring Obsidians Logo
   ![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/b5381ce7-8ba0-4dbe-80d0-ea2ac235bfd2)
 - Custom headers that blend well with Canvas.
 - A single unified active line hightlight in editor
 ![Screenshot 2024-11-30 234030](https://github.com/user-attachments/assets/46ed4876-084c-4fcd-9685-36a7b617c6e5)
-- Upright Stacked tabs titles for easier reading (no need to crane your neck)
 - Custom Left Sidebar toggle in Hidden Window Frame and Obsidian Frame
 - Improved stacked tabs compatibility for Custom background support
-- First theme with active highlightable panes, so you know what pane is focused on.
-<br>
+- Active highlightable panes, so you know what pane is focused on.
+- Compact Sidepanel bar on mobile, the navbar no longer covers the last note in the sidepanel.
+<img width="392" height="103" alt="image" src="https://github.com/user-attachments/assets/765bae3c-dcfd-42fd-beec-34399835ab7b" />
+
+<br><br>
 
 - Support with Style Settings
-  - Custom Background with opacity, brightness, bluryness controls
+  - Custom Background with opacity, brightness, blur controls
     - Improved opacity controls compared to other themes no weird Opacity gaps not being filled in properly.
   - Custom Stacked tabs width control
   - Bigger and custom checkboxes for easier viewing
