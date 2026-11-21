@@ -1,11 +1,32 @@
 # Cyber Glow for Obsidian
 ![CyberGlow Version](https://img.shields.io/github/v/tag/ThePharaohArt/Obsidian-CyberGlow?label=CyberGlow%20Version&style=flat-square&color=4CADD6) ![Last Updated](https://img.shields.io/github/last-commit/ThePharaohArt/Obsidian-CyberGlow?label=Last%20Updated&style=flat-square&color=4CADD6) ![Stars](https://img.shields.io/github/stars/ThePharaohArt/Obsidian-CyberGlow?label=Stars&style=flat-square&color=D6C84C) ![Open Issues](https://img.shields.io/github/issues/ThePharaohArt/Obsidian-CyberGlow?label=Open%20Issues&style=flat-square&color=D64C4C) ![Solved Issues](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/ThePharaohArt/Obsidian-CyberGlow/main/solved-issues-badge.json&style=flat-square)
 
-> ## 2.7.0 **Changes**
-> <img width="392" height="103" alt="image" src="https://github.com/user-attachments/assets/765bae3c-dcfd-42fd-beec-34399835ab7b" /><br>
-> - Compact Sidepanel bar on mobile, the navbar no longer covers the last note in the sidepanel.
-> - Reworked Page selected page highlight.
-> - Huge amounts of changes, too many to list here, see the full changelog in the release section.
+> ## 2.8.0 **Changes**
+> - Removed: Settings opening animation for when the settings opens in its own window.
+> 
+> - Added: Checkbox Chevrons are visible again and always visible
+> ---
+> - Started to Update: Buttons with added base background for better visibility
+> - Updated: base background color for better visibility and differentiation in the sections when background is disabled
+> - Updated: Active Window Highlight
+> - Updated: Changed the way Cyber Glow handles list chevrons [168](https://github.com/ThePharaohArt/Obsidian-CyberGlow/issues/168)
+> ---
+> - Fixed: Settings window bottom gap
+> - Fixed: Dropdown button on hover [161](https://github.com/ThePharaohArt/Obsidian-CyberGlow/issues/161)
+> - Fixed: Settings Titlebar styling [160](https://github.com/ThePharaohArt/Obsidian-CyberGlow/issues/160)
+> - Fixed: Settings titlebar sizing
+> - Fixed: Settings Close button when its not a separate window
+> - Fixed: Fail Callouts are red again [162](https://github.com/ThePharaohArt/Obsidian-CyberGlow/issues/162)
+> - Fixed: Collapsed number list to match with collapsed bullet list [152](https://github.com/ThePharaohArt/Obsidian-CyberGlow/issues/152)
+> - Fixed: Unresolved link color no longer uses Vanilla behavior of using accent color, making the text unreadable
+> - Fixed: New Obsidian Sidepanel border line graphic error
+> - Fixed: Sidepanel not loading contents when Obsidian's sidepanel starts closed on left or right [166](https://github.com/ThePharaohArt/Obsidian-CyberGlow/issues/166)
+> - Fixed: Style Settings Disable animation on sidepanel and notes works properly
+> - Fixed: Returned the header title to the center following the Vanilla left placement of it.
+> ---
+> - Phone Updated: Increased the size of the button/icons in header
+> - Phone Fixed: Corrected the padding for sidebar search to not overlap with the phone's status bar.
+
 
 ![Screenshot](https://github.com/user-attachments/assets/eca873d2-5aad-4719-a83e-d8d586d85416)
 
