@@ -68,7 +68,7 @@ No additional plugins are required to have the theme working unlike many other t
 Styling that first appeared on CyberGlow:
 - Adopt theme wide Accent color support for majority of the theme 
 - Unique Line Separator featuring Obsidians Logo
-  ![image](https://github.com/ArtexJay/Obsidian-CyberGlow/assets/32932497/b5381ce7-8ba0-4dbe-80d0-ea2ac235bfd2)
+  ![image](https://github.com/ThePharaohArt/Obsidian-CyberGlow/assets/32932497/b5381ce7-8ba0-4dbe-80d0-ea2ac235bfd2)
 - Custom headers that blend well with Canvas.
 - A single unified active line hightlight in editor
 ![Screenshot 2024-11-30 234030](https://github.com/user-attachments/assets/46ed4876-084c-4fcd-9685-36a7b617c6e5)
