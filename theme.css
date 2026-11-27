@@ -1,3 +1,6 @@
+/* Cyber Glow for Obsidian built by ThePharaohArt
+/* Please credit me if you modify or take parts for your own theme*/
+
 /* #region ======= Style Settings ======= 
 /* @settings
 name: Cyber Glow Tweakbox
@@ -874,7 +877,7 @@ body:not(.restore-header){
 body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-buttons, .is-mobile .view-header .view-action, .mobile-tab-switcher-menubar, .mobile-navbar-actions, .is-mobile {
 
     --caret-color: var(--text-normal);
-    --navbar-height:20px;
+    --navbar-height:40px;
     --titlebar-height: 35px;
     --link-unresolved-color: var(--text-close-color);
     --link-unresolved-opacity: 0.8;
@@ -1275,7 +1278,7 @@ body, .workspace-drawer .nav-buttons-container, .is-mobile .view-header-nav-butt
 .CG-disableAni .markdown-rendered button.copy-code-button:hover, .CG-disableAni .mod-windows .titlebar-button:not(.mod-logo):hover, .CG-disableAni .status-bar-item.mod-clickable:hover, .CG-disableAni .pdf-sidebar-container .thumbnail:hover, .CG-disableAni body:not(.is-mobile) .empty-state-action:hover, .CG-disableAni .metadata-property-icon:hover, .CG-disableAni .metadata-property-icon, .CG-disableAni .sidebar-toggle-button.mod-right .clickable-icon:hover, .CG-disableAni .mod-left-split .workspace-tab-header.has-active-menu:hover, .CG-disableAni .mod-right-split .workspace-tab-header.has-active-menu:hover, .CG-disableAni .mod-left-split .workspace-tab-header.is-active:hover, .CG-disableAni .mod-right-split .workspace-tab-header.is-active:hover, .CG-disableAni .status-bar-item.plugin-obsidian-languagetool-plugin:hover, .CG-disableAni .canvas-control-item:hover, .CG-disableAni .canvas-card-menu .canvas-card-menu-button:hover { animation: none;}
 
 /*Hover button button style*/
-.markdown-rendered button.copy-code-button:hover, .mod-windows .titlebar-button:not(.mod-logo):hover, .status-bar-item.mod-clickable:hover, .pdf-sidebar-container .thumbnail:hover, body:not(.is-mobile) .empty-state-action:hover, .metadata-property-icon:hover, .metadata-property-icon, .sidebar-toggle-button.mod-right .clickable-icon:hover, .mod-left-split .workspace-tab-header.has-active-menu:hover, .mod-right-split .workspace-tab-header.has-active-menu:hover, .mod-left-split .workspace-tab-header.is-active:hover, .mod-right-split .workspace-tab-header.is-active:hover, .status-bar-item.plugin-obsidian-languagetool-plugin:hover, .canvas-control-item:hover, .canvas-card-menu .canvas-card-menu-button:hover  {
+.markdown-rendered button.copy-code-button:hover, .mod-windows .titlebar-button:not(.mod-logo):hover, .status-bar-item.mod-clickable:hover, .pdf-sidebar-container .thumbnail:hover, .empty-state-action-list>.text-icon-button.mod-pill:hover, .metadata-property-icon:hover, .metadata-property-icon, .sidebar-toggle-button.mod-right .clickable-icon:hover, .mod-left-split .workspace-tab-header.has-active-menu:hover, .mod-right-split .workspace-tab-header.has-active-menu:hover, .mod-left-split .workspace-tab-header.is-active:hover, .mod-right-split .workspace-tab-header.is-active:hover, .status-bar-item.plugin-obsidian-languagetool-plugin:hover, .canvas-control-item:hover, .canvas-card-menu .canvas-card-menu-button:hover  {
     background-color: var(--hover-bg);
     box-shadow: inset 0em 0em 1em var(--hover-color);
     border-radius: var(--radius-s);
@@ -1331,7 +1334,7 @@ body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover{
 }
 
 .clickable-icon:not(.input-right-decorator, .sidebar-toggle-button .clickable-icon, .clickable-icon.nav-action-button:active, .document-search-close-button, .graph-controls-button.mod-close, .graph-controls-button, button.clickable-icon[aria-label="Remove"], button.clickable-icon[aria-label="Remove filter"], .is-mobile .mod-left-split-toggle, .CG-MObsidian-sbt.is-mobile .mod-left-split-toggle, .modal-close-button, .modal-header-button):active, .markdown-rendered button.copy-code-button:active, .mod-windows .titlebar-button:not(.mod-logo):active, .status-bar-item.mod-clickable:active, .clickable-icon.nav-action-button:active, .search-result-hover-button:active, .pdf-sidebar-container .thumbnail:active, :not(.is-mobile) .empty-state-action:active, .metadata-property-icon:active, .sidebar-toggle-button.mod-right .clickable-icon:active, .status-bar-item.plugin-obsidian-languagetool-plugin:active, .canvas-control-item:active,  .canvas-card-menu .canvas-card-menu-button.mod-draggable:active, .is-mobile .workspace-drawer-tab-option-item:active, .is-mobile .workspace-drawer-header-switcher:active, .is-mobile .workspace-drawer-header-icon:active, .workspace-drawer-header-icon:active, .workspace-drawer-active-tab-icon:active, .workspace-drawer-active-tab-back-icon:active, 
-.workspace-drawer-active-tab-title:active, .is-phone .modal-setting-back-button:active, .table-col-btn:active, .bases-td.mod-implicit:active, .markdown-embed-link:active, .file-embed-link:active    {
+.workspace-drawer-active-tab-title:active, .is-phone .modal-setting-back-button:active, .table-col-btn:active, .bases-td.mod-implicit:active, .markdown-embed-link:active, .file-embed-link:active,.empty-state-action-list>.text-icon-button.mod-pill:active   {
     animation: 0.3s bigpressed forwards;
     background-color: var(--hover-bg2);
     box-shadow: inset 0em 0em 1.5em var(--hover-color);
@@ -1348,17 +1351,20 @@ body.is-hidden-frameless .sidebar-toggle-button.mod-left:hover{
 }
 
 /*Button and Dropdown Styling*/
-button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered button.copy-code-button, .excalidraw .color-picker__button, button.context-menu-item, .excalidraw .help-icon, .excalidraw .dropdown-menu-button, .excalidraw .ToolIcon_type_button--show, button.mod-warning), .dropdown, .search-results-info .dropdown, .style-settings-export, .style-settings-import, .metadata-container .metadata-add-button, .is-mobile .workspace-drawer-active-tab-header, .empty-state-action:not(.mod-close), .mk-main-menu-button:hover, .base-toolbar-sort-item .combobox-button, .bases-query-container .filter-row .combobox-button, .input-row-content .combobox-button, .bases-query-container .filter-group .filter-group-header .conjunction.dropdown, .is-mobile .workspace-drawer-tab-select .workspace-tab-header-inner, select:not(:disabled):not(.mod-disabled):hover, .dropdown:not(:disabled):not(.mod-disabled):hover{ 
+button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered button.copy-code-button, .excalidraw .color-picker__button, button.context-menu-item, .excalidraw .help-icon, .excalidraw .dropdown-menu-button, .excalidraw .ToolIcon_type_button--show, button.mod-warning), .dropdown, .search-results-info .dropdown, .style-settings-export, .style-settings-import, .metadata-container .metadata-add-button, .is-mobile .workspace-drawer-active-tab-header, .empty-state-action-list>.text-icon-button.mod-pill, .mk-main-menu-button:hover, .base-toolbar-sort-item .combobox-button, .bases-query-container .filter-row .combobox-button, .input-row-content .combobox-button, .bases-query-container .filter-group .filter-group-header .conjunction.dropdown, .is-mobile .workspace-drawer-tab-select .workspace-tab-header-inner, select:not(:disabled):not(.mod-disabled):hover, .dropdown:not(:disabled):not(.mod-disabled):hover{ 
     background-color: var(--color-accent-active);
     box-shadow: 0em 0em 0.15em 0.1em var(--text-accent), inset 0em 0em 2em var(--text-accent);
     border-radius: var(--radius-s);
     color:  var(--text-on-accent);
 }
 
+.empty-state-action-list>.text-icon-button.mod-pill{
+border:none;
+}
+
 .dropdown option, select{
     background-color: var(--background-settings);
     color: var(--text-normal);
-    color: var(--text-accent)
 }
 .CG-disableAni button:not(.clickable-icon):not(.markdown-rendered button.copy-code-button, .CG-disableAni .excalidraw .color-picker__button, .CG-disableAni button.context-menu-item, .CG-disableAni .excalidraw .help-icon, .CG-disableAni .excalidraw .dropdown-menu-button, .CG-disableAni .excalidraw .ToolIcon_type_button--show, .CG-disableAni button.mod-warning):hover,
 .CG-disableAni .dropdown:hover,
@@ -1423,14 +1429,13 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
 .CG-disableAni button.mod-warning:hover,
 .CG-disableAni .clickable-icon.document-search-close-button:hover,
 .CG-disableAni .graph-controls-button.mod-close:hover,
-.CG-disableAni .empty-state-action.tappable.mod-close:hover,
 .CG-disableAni .mobile-tab .close-button {
     animation: none;
 }
 
 
 /*Close Button on Hover*/
-.modal-close-button:hover, .document-search-close-button:hover, a.kanban-plugin__search-cancel-button.clickable-icon:hover, a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:hover, .graph-controls:not(.is-close) .graph-controls-button.mod-close:hover,.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:hover, .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover, .multi-select-pill-remove-button:hover, button.mod-warning:hover, .clickable-icon.document-search-close-button:hover, .graph-controls-button.mod-close:hover, .empty-state-action.tappable.mod-close:hover, .mobile-tab .close-button, .modal-header-button .mod-raised .clickable-icon:hover, .modal-header-button .mod-raised .modal-close-button:hover, .modal-header-button:hover{
+.modal-close-button:hover, .document-search-close-button:hover, a.kanban-plugin__search-cancel-button.clickable-icon:hover, a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:hover, .graph-controls:not(.is-close) .graph-controls-button.mod-close:hover,.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:hover, .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover, .multi-select-pill-remove-button:hover, button.mod-warning:hover, .clickable-icon.document-search-close-button:hover, .graph-controls-button.mod-close:hover, .mobile-tab .close-button, .modal-header-button .mod-raised .clickable-icon:hover, .modal-header-button .mod-raised .modal-close-button:hover, .modal-header-button:hover{
     color: var(--text-close-color);
     background-color: var(--background-close-hover);
     box-shadow: inset 0em 0em 0.35em var(--text-close-color);
@@ -1467,15 +1472,13 @@ button:not(.clickable-icon, [aria-label='Sticker']):not(.markdown-rendered butto
 .CG-disableAni .graph-controls:not(.is-close) .graph-controls-button.mod-close:active,
 .CG-disableAni button.mod-warning:active,
 .CG-disableAni .clickable-icon.document-search-close-button:active,
-.CG-disableAni .empty-state-action.tappable.mod-close:active,
-.CG-disableAni .mobile-tab .close-button:active,
-.CG-disableAni .empty-state-action.tappable.mod-close:active {
+.CG-disableAni .mobile-tab .close-button:active {
     animation: none;
 }
 
 
 /*Close Button on active*/
-.modal-close-button:active, .document-search-close-button:active, a.kanban-plugin__search-cancel-button.clickable-icon:active, a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active, .multi-select-pill-remove-button:active, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:active, .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:active, .graph-controls:not(.is-close) .graph-controls-button.mod-close:active, button.mod-warning:active, .clickable-icon.document-search-close-button:active, .empty-state-action.tappable.mod-close:active, .mobile-tab .close-button:active, .empty-state-action.tappable.mod-close:active, .is-phone .modal-close-button:active, .modal-header-button .mod-raised .modal-close-button:active, .modal-header-button:active {
+.modal-close-button:active, .document-search-close-button:active, a.kanban-plugin__search-cancel-button.clickable-icon:active, a.kanban-plugin__item-postfix-button.is-enabled.clickable-icon:active, .multi-select-pill-remove-button:active, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-close-button:active, .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:active, .graph-controls:not(.is-close) .graph-controls-button.mod-close:active, button.mod-warning:active, .clickable-icon.document-search-close-button:active, .is-phone .modal-close-button:active, .modal-header-button .mod-raised .modal-close-button:active, .modal-header-button:active {
     color: var(--text-close-color);
     background-color: var(--background-close-active);
     box-shadow: inset 0em 0em 0.2em var(--text-close-color);
@@ -1856,7 +1859,7 @@ body:not(.is-phone) .mk-menu-suggestions{
 
 
 /*Displays Red for Permanent Deletion */
-.menu-item.is-warning,  .empty-state-action.tappable.mod-close, .is-phone .menu-item.tappable.is-warning {
+.menu-item.is-warning, .is-phone .menu-item.tappable.is-warning {
     background-color: var(--background-close);
     color: var(--text-close-color);
     margin-top: 5px;
@@ -3107,7 +3110,6 @@ padding-top: 5px;
 /*Styles PDF Toolbar*/
 .pdf-toolbar {
     background-color: var(--background-tertiary);
-    border-bottom: none;
     border-bottom: 2px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
@@ -3118,22 +3120,6 @@ padding-top: 5px;
 /*#endregion*/
 
 /*#region -------- Empty Tab -------- */
-/*Sets Style for Empty Title*/
-.empty-state-title {
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
-    border-bottom: 3px solid;
-    text-shadow: 0 0 5px var(--text-accent), 0 0 10px var(--text-accent), 0 0 20px var(--text-accent), 0 0 40px var(--text-accent), 0 0 80px var(--text-accent);
-}
-/*Sets Spacing for Empty Items*/
-body:not(.is-mobile) .empty-state-action {
-    padding: 0 5px 0 5px;
-    margin-bottom: 5px;
-}
-.empty-state-action.tappable.mod-close{
-    color: var(--text-close-color);
-}
-
 .empty-state-action{
     border-radius: var(--radius-s);
 }
@@ -3707,11 +3693,11 @@ span.cm-hmd-internal-link .is-unresolved .cm-underline::after{
     padding-inline-end: 1.1em;
       mask-image:
     linear-gradient(transparent, transparent),
-    url("public/images/6155340132a851f6089e.svg");
+    url("./public/external-link.svg");
         mask-position: center;
     mask-repeat: no-repeat;
      background: var(--text-normal);
-
+    margin-left: 5px;
 }
 
 
@@ -4313,8 +4299,8 @@ input[type=checkbox]:checked:after{
     border-bottom: 2px solid;
 }
 /*Search row Header*/
-.search-row{
-    padding: var(--size-4-3) var(--size-4-3) var(--size-4-2);
+.is-phone .search-row{
+    padding: var(--view-header-top-offset) var(--size-4-3) var(--size-4-2);
     margin: 0px;
 }
 /*Style Bottom Seperation for Search*/
@@ -4780,7 +4766,7 @@ body:not(.is-mobile) .workspace-leaf-content>.nav-header+*, .search-result-conta
 }
 
 
-.nav-folder-title[data-count]::after, .tree-item-flair, .tree-item-self:hover .tree-item-flair, .community-item .flair, body:not(.is-phone) .community-item.is-selected .flair, body:not(.is-phone) .community-item.is-selected:hover .flair, .setting-hotkey{
+.nav-folder-title[data-count]::after, .tree-item-flair, .tree-item-self:hover .tree-item-flair, .community-item .flair, body:not(.is-phone) .community-item.is-selected .flair, body:not(.is-phone) .community-item.is-selected:hover .flair, .setting-hotkey, .empty-state-hotkey{
     padding: 0 var(--size-4-1);
     background-color: var(--text-selection);
     box-shadow: inset 0em 0em 0.7em var(--text-accent);
@@ -5584,6 +5570,11 @@ max-width: var(--navbar-max-width);
     border-bottom: 2px solid;
 }
 
+body:has(.clickable-icon.view-action.has-active-menu) .menu.mod-sheet{
+    padding-top: var(--view-header-top-offset);
+}
+
+
 .is-phone .menu-group .menu-item:not(.is-label):after{
     content: none;
 }
@@ -5610,7 +5601,6 @@ max-width: var(--navbar-max-width);
 	filter: blur 120px;
 	backdrop-filter: blur(18px);
 	z-index: 90 !important;
-	border-radius: 5px 5px 0 0;
 	border-image-slice: 1;
 	border-image-source: linear-gradient(to right, transparent, var(--text-accent), transparent);
 	border-bottom: 1px solid;
@@ -5671,11 +5661,17 @@ animation: none;
     padding-left: 5px;
 }
 
-/*Returns embedded backlinks in notes*/
-.is-phone .embedded-backlinks .nav-header{
-top: 32%;
-    position: absolute;
-    left: 100%;
+.is-phone .embedded-backlinks .nav-buttons-container{
+    border-radius: var(--radius-m);
+    margin-top: -4%;
+    border-top: 1px solid transparent;
+}
+.is-phone .embedded-backlinks .nav-header>.search-input-container{
+    margin-top: -4%;
+}
+
+.backlink-pane.node-insert-event .search-result-container{
+    margin-right: 3px;
 }
 
 /*Export Page Style*/
@@ -5806,7 +5802,6 @@ color: var(--text-close-color);
 }
 
 .is-phone .modal .modal-setting-back-button{
-    border-radius: 5px;
     height: var(--touch-size-xs);
     width: var(--touch-size-xs);
     top: calc(var(--safe-area-inset-top) + 10px);
@@ -5865,11 +5860,13 @@ transform: none;
 .is-phone .workspace-drawer-tab-options{
     margin:0;
     width: 45%;
-    left: 220px;
+    left: 60%;
 }
 
-.is-phone  .workspace-drawer.mod-left .workspace-drawer-tab-options .workspace-drawer-tab-select{
+.is-phone .workspace-drawer.mod-left .workspace-drawer-tab-options .workspace-drawer-tab-select{
     align-content: center;
+    width: 85%;
+right: -5%;
 }
 
 .clickable-icon.workspace-drawer-header-icon.mod-raised.mod-settings{
@@ -5890,6 +5887,9 @@ body:not(.is-mobile) .workspace-drawer-active-tab-container .workspace-drawer-ac
     padding: 3px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
+}
+.is-mobile .workspace-drawer-header-switcher{
+    width: 50%;
 }
 
 .workspace-drawer-active-tab-chevron{
@@ -6355,7 +6355,6 @@ section.footnotes::before{
     text-shadow: 0 0 var(--CG-Header1-slider1) var(--h1-glow), 0 0 var(--CG-Header1-slider2) var(--h1-glow), 0 0 var(--CG-Header1-slider3) var(--h1-glow), 0 0 var(--CG-Header1-slider4) var(--h1-glow), 0 0 var(--CG-Header1-slider5) var(--h1-glow);
     color: var(--text-normal);
         display: block;
-        text-align: center;
         letter-spacing: 1px;
         font-size: var(--h1-size);
 }
@@ -6384,4 +6383,14 @@ body:not(.is-mobile) .embedded-backlinks .nav-header{
     border-radius: var(--radius-s);
     box-decoration-break: clone;
     box-shadow: inset 0em 0em 1.5em var(--text-highlight-bg), 0em 0em 0.5em var(--text-highlight-bg);
+}
+
+/*Mobile Note Properties*/
+.is-mobile .metadata-content{
+    background-color: transparent;
+}
+
+/*Phone Bases*/
+.is-phone .mod-root .workspace-leaf-content .view-content{
+    margin-top: 0px;
 }
